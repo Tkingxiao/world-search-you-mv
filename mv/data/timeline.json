@@ -1,0 +1,3744 @@
+{
+ "fps": 60,
+ "duration": 295.3466666667,
+ "audio": "mv/ref/song44100.wav",
+ "bpm": 139.17,
+ "first_downbeat": 0.9738,
+ "stages": [
+  {
+   "t": 0.0,
+   "label": "00 OFFLINE"
+  },
+  {
+   "t": 14.36,
+   "label": "01 SORT"
+  },
+  {
+   "t": 40.86,
+   "label": "02 RECALL"
+  },
+  {
+   "t": 82.89,
+   "label": "03 ROUTE"
+  },
+  {
+   "t": 151.84,
+   "label": "04 FORGET"
+  },
+  {
+   "t": 179.47,
+   "label": "05 EVERYWHERE"
+  },
+  {
+   "t": 207.14,
+   "label": "06 MERGE"
+  },
+  {
+   "t": 233.77,
+   "label": "07 RESURFACE"
+  },
+  {
+   "t": 275.75,
+   "label": "08 RESTORE"
+  }
+ ],
+ "sections": [
+  {
+   "id": "S00",
+   "name": "PROLOGUE",
+   "start": 0.0,
+   "end": 14.36,
+   "stage": "00 OFFLINE"
+  },
+  {
+   "id": "S01",
+   "name": "SORT",
+   "start": 14.36,
+   "end": 40.86,
+   "stage": "01 SORT"
+  },
+  {
+   "id": "S02",
+   "name": "RECALL",
+   "start": 40.86,
+   "end": 68.17,
+   "stage": "02 RECALL"
+  },
+  {
+   "id": "S03",
+   "name": "SEARCH-A",
+   "start": 68.17,
+   "end": 82.89,
+   "stage": "02 RECALL"
+  },
+  {
+   "id": "S04",
+   "name": "ROUTE",
+   "start": 82.89,
+   "end": 137.09,
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": "S05",
+   "name": "SEARCH-B",
+   "start": 137.09,
+   "end": 151.84,
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": "S06",
+   "name": "FORGET",
+   "start": 151.84,
+   "end": 179.47,
+   "stage": "04 FORGET"
+  },
+  {
+   "id": "S07",
+   "name": "EVERYWHERE",
+   "start": 179.47,
+   "end": 207.14,
+   "stage": "05 EVERYWHERE"
+  },
+  {
+   "id": "S08",
+   "name": "MERGE",
+   "start": 207.14,
+   "end": 233.77,
+   "stage": "06 MERGE"
+  },
+  {
+   "id": "S09",
+   "name": "RESURFACE",
+   "start": 233.77,
+   "end": 261.06,
+   "stage": "07 RESURFACE"
+  },
+  {
+   "id": "S10",
+   "name": "ASCENT",
+   "start": 261.06,
+   "end": 275.75,
+   "stage": "07 RESURFACE"
+  },
+  {
+   "id": "S11",
+   "name": "RESTORE",
+   "start": 275.75,
+   "end": 295.3466666667,
+   "stage": "08 RESTORE"
+  }
+ ],
+ "lyrics": [
+  {
+   "id": 0,
+   "en": "Side by side, the lovelier goes up",
+   "zh": "并肩浮起，更美的那一颗先向上",
+   "start": 14.36,
+   "end": 21.18,
+   "words": [
+    {
+     "w": "Side",
+     "start": 14.38,
+     "end": 15.223
+    },
+    {
+     "w": "by",
+     "start": 15.223,
+     "end": 16.065
+    },
+    {
+     "w": "side,",
+     "start": 16.065,
+     "end": 16.907
+    },
+    {
+     "w": "the",
+     "start": 16.907,
+     "end": 17.75
+    },
+    {
+     "w": "lovelier",
+     "start": 17.75,
+     "end": 19.435
+    },
+    {
+     "w": "goes",
+     "start": 19.435,
+     "end": 20.277
+    },
+    {
+     "w": "up",
+     "start": 20.277,
+     "end": 21.12
+    }
+   ],
+   "stage": "01 SORT"
+  },
+  {
+   "id": 1,
+   "en": "Reach for the top, till the bubble pops",
+   "zh": "一路攀到最高处，直到气泡破裂",
+   "start": 21.18,
+   "end": 28.05,
+   "words": [
+    {
+     "w": "Reach",
+     "start": 21.2,
+     "end": 22.049
+    },
+    {
+     "w": "for",
+     "start": 22.049,
+     "end": 22.898
+    },
+    {
+     "w": "the",
+     "start": 22.898,
+     "end": 23.746
+    },
+    {
+     "w": "top,",
+     "start": 23.746,
+     "end": 24.595
+    },
+    {
+     "w": "till",
+     "start": 24.595,
+     "end": 25.444
+    },
+    {
+     "w": "the",
+     "start": 25.444,
+     "end": 26.293
+    },
+    {
+     "w": "bubble",
+     "start": 26.293,
+     "end": 27.141
+    },
+    {
+     "w": "pops",
+     "start": 27.141,
+     "end": 27.99
+    }
+   ],
+   "stage": "01 SORT"
+  },
+  {
+   "id": 2,
+   "en": "Take a memory, insert to the past",
+   "zh": "取一段记忆，插回过去",
+   "start": 28.05,
+   "end": 35.05,
+   "words": [
+    {
+     "w": "Take",
+     "start": 28.07,
+     "end": 28.935
+    },
+    {
+     "w": "a",
+     "start": 28.935,
+     "end": 29.8
+    },
+    {
+     "w": "memory,",
+     "start": 29.8,
+     "end": 31.53
+    },
+    {
+     "w": "insert",
+     "start": 31.53,
+     "end": 32.395
+    },
+    {
+     "w": "to",
+     "start": 32.395,
+     "end": 33.26
+    },
+    {
+     "w": "the",
+     "start": 33.26,
+     "end": 34.125
+    },
+    {
+     "w": "past",
+     "start": 34.125,
+     "end": 34.99
+    }
+   ],
+   "stage": "01 SORT"
+  },
+  {
+   "id": 3,
+   "en": "Which one is the sweetest? Save it for the last",
+   "zh": "哪一颗最甜？留到最后再尝",
+   "start": 35.05,
+   "end": 40.9,
+   "words": [
+    {
+     "w": "Which",
+     "start": 35.07,
+     "end": 35.647
+    },
+    {
+     "w": "one",
+     "start": 35.647,
+     "end": 36.224
+    },
+    {
+     "w": "is",
+     "start": 36.224,
+     "end": 36.801
+    },
+    {
+     "w": "the",
+     "start": 36.801,
+     "end": 37.378
+    },
+    {
+     "w": "sweetest?",
+     "start": 37.378,
+     "end": 37.955
+    },
+    {
+     "w": "Save",
+     "start": 37.955,
+     "end": 38.532
+    },
+    {
+     "w": "it",
+     "start": 38.532,
+     "end": 39.109
+    },
+    {
+     "w": "for",
+     "start": 39.109,
+     "end": 39.686
+    },
+    {
+     "w": "the",
+     "start": 39.686,
+     "end": 40.263
+    },
+    {
+     "w": "last",
+     "start": 40.263,
+     "end": 40.84
+    }
+   ],
+   "stage": "01 SORT"
+  },
+  {
+   "id": 4,
+   "en": "If you turn into a table",
+   "zh": "如果你变成一张桌子",
+   "start": 40.9,
+   "end": 44.14,
+   "words": [
+    {
+     "w": "If",
+     "start": 40.92,
+     "end": 41.371
+    },
+    {
+     "w": "you",
+     "start": 41.371,
+     "end": 41.823
+    },
+    {
+     "w": "turn",
+     "start": 41.823,
+     "end": 42.274
+    },
+    {
+     "w": "into",
+     "start": 42.274,
+     "end": 43.177
+    },
+    {
+     "w": "a",
+     "start": 43.177,
+     "end": 43.629
+    },
+    {
+     "w": "table",
+     "start": 43.629,
+     "end": 44.08
+    }
+   ],
+   "stage": "02 RECALL"
+  },
+  {
+   "id": 5,
+   "en": "You must be at the height of my elbows",
+   "zh": "那一定正好到我手肘的高度",
+   "start": 44.14,
+   "end": 47.71,
+   "words": [
+    {
+     "w": "You",
+     "start": 44.16,
+     "end": 44.548
+    },
+    {
+     "w": "must",
+     "start": 44.548,
+     "end": 44.936
+    },
+    {
+     "w": "be",
+     "start": 44.936,
+     "end": 45.323
+    },
+    {
+     "w": "at",
+     "start": 45.323,
+     "end": 45.711
+    },
+    {
+     "w": "the",
+     "start": 45.711,
+     "end": 46.099
+    },
+    {
+     "w": "height",
+     "start": 46.099,
+     "end": 46.487
+    },
+    {
+     "w": "of",
+     "start": 46.487,
+     "end": 46.874
+    },
+    {
+     "w": "my",
+     "start": 46.874,
+     "end": 47.262
+    },
+    {
+     "w": "elbows",
+     "start": 47.262,
+     "end": 47.65
+    }
+   ],
+   "stage": "02 RECALL"
+  },
+  {
+   "id": 6,
+   "en": "Odd stubby leg makes you wobbly",
+   "zh": "奇怪的小短腿，让你摇摇晃晃",
+   "start": 47.71,
+   "end": 51.0,
+   "words": [
+    {
+     "w": "Odd",
+     "start": 47.73,
+     "end": 48.131
+    },
+    {
+     "w": "stubby",
+     "start": 48.131,
+     "end": 48.934
+    },
+    {
+     "w": "leg",
+     "start": 48.934,
+     "end": 49.335
+    },
+    {
+     "w": "makes",
+     "start": 49.335,
+     "end": 49.736
+    },
+    {
+     "w": "you",
+     "start": 49.736,
+     "end": 50.138
+    },
+    {
+     "w": "wobbly",
+     "start": 50.138,
+     "end": 50.94
+    }
+   ],
+   "stage": "02 RECALL"
+  },
+  {
+   "id": 7,
+   "en": "You're the only perfect table for me",
+   "zh": "你就是我唯一完美的桌子",
+   "start": 51.0,
+   "end": 54.46,
+   "words": [
+    {
+     "w": "You're",
+     "start": 51.02,
+     "end": 51.443
+    },
+    {
+     "w": "the",
+     "start": 51.443,
+     "end": 51.865
+    },
+    {
+     "w": "only",
+     "start": 51.865,
+     "end": 52.71
+    },
+    {
+     "w": "perfect",
+     "start": 52.71,
+     "end": 53.133
+    },
+    {
+     "w": "table",
+     "start": 53.133,
+     "end": 53.555
+    },
+    {
+     "w": "for",
+     "start": 53.555,
+     "end": 53.977
+    },
+    {
+     "w": "me",
+     "start": 53.977,
+     "end": 54.4
+    }
+   ],
+   "stage": "02 RECALL"
+  },
+  {
+   "id": 8,
+   "en": "If you turn into an eggplant",
+   "zh": "如果你变成一只茄子",
+   "start": 54.46,
+   "end": 57.83,
+   "words": [
+    {
+     "w": "If",
+     "start": 54.48,
+     "end": 54.95
+    },
+    {
+     "w": "you",
+     "start": 54.95,
+     "end": 55.42
+    },
+    {
+     "w": "turn",
+     "start": 55.42,
+     "end": 55.89
+    },
+    {
+     "w": "into",
+     "start": 55.89,
+     "end": 56.83
+    },
+    {
+     "w": "an",
+     "start": 56.83,
+     "end": 57.3
+    },
+    {
+     "w": "eggplant",
+     "start": 57.3,
+     "end": 57.77
+    }
+   ],
+   "stage": "02 RECALL"
+  },
+  {
+   "id": 9,
+   "en": "You'll be my purple friend",
+   "zh": "你就做我紫色的朋友",
+   "start": 57.83,
+   "end": 61.22,
+   "words": [
+    {
+     "w": "You'll",
+     "start": 57.85,
+     "end": 58.512
+    },
+    {
+     "w": "be",
+     "start": 58.512,
+     "end": 59.174
+    },
+    {
+     "w": "my",
+     "start": 59.174,
+     "end": 59.836
+    },
+    {
+     "w": "purple",
+     "start": 59.836,
+     "end": 60.498
+    },
+    {
+     "w": "friend",
+     "start": 60.498,
+     "end": 61.16
+    }
+   ],
+   "stage": "02 RECALL"
+  },
+  {
+   "id": 10,
+   "en": "Scratchy nail marks on your body",
+   "zh": "你身上那些指甲划出的痕迹",
+   "start": 61.22,
+   "end": 64.66,
+   "words": [
+    {
+     "w": "Scratchy",
+     "start": 61.24,
+     "end": 62.08
+    },
+    {
+     "w": "nail",
+     "start": 62.08,
+     "end": 62.5
+    },
+    {
+     "w": "marks",
+     "start": 62.5,
+     "end": 62.92
+    },
+    {
+     "w": "on",
+     "start": 62.92,
+     "end": 63.34
+    },
+    {
+     "w": "your",
+     "start": 63.34,
+     "end": 63.76
+    },
+    {
+     "w": "body",
+     "start": 63.76,
+     "end": 64.6
+    }
+   ],
+   "stage": "02 RECALL"
+  },
+  {
+   "id": 11,
+   "en": "You're the only perfect eggplant for me",
+   "zh": "你就是我唯一完美的茄子",
+   "start": 64.66,
+   "end": 68.17,
+   "words": [
+    {
+     "w": "You're",
+     "start": 64.68,
+     "end": 65.109
+    },
+    {
+     "w": "the",
+     "start": 65.109,
+     "end": 65.537
+    },
+    {
+     "w": "only",
+     "start": 65.537,
+     "end": 66.395
+    },
+    {
+     "w": "perfect",
+     "start": 66.395,
+     "end": 66.824
+    },
+    {
+     "w": "eggplant",
+     "start": 66.824,
+     "end": 67.252
+    },
+    {
+     "w": "for",
+     "start": 67.252,
+     "end": 67.681
+    },
+    {
+     "w": "me",
+     "start": 67.681,
+     "end": 68.11
+    }
+   ],
+   "stage": "02 RECALL"
+  },
+  {
+   "id": 12,
+   "en": "I'm searching",
+   "zh": "我在寻找",
+   "start": 68.17,
+   "end": 82.89,
+   "words": [
+    {
+     "w": "I'm",
+     "start": 68.19,
+     "end": 73.07
+    },
+    {
+     "w": "searching",
+     "start": 73.07,
+     "end": 82.83
+    }
+   ],
+   "stage": "02 RECALL"
+  },
+  {
+   "id": 13,
+   "en": "If you're a cat",
+   "zh": "如果你是一只猫",
+   "start": 82.89,
+   "end": 85.49,
+   "words": [
+    {
+     "w": "If",
+     "start": 82.91,
+     "end": 83.54
+    },
+    {
+     "w": "you're",
+     "start": 83.54,
+     "end": 84.17
+    },
+    {
+     "w": "a",
+     "start": 84.17,
+     "end": 84.8
+    },
+    {
+     "w": "cat",
+     "start": 84.8,
+     "end": 85.43
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 14,
+   "en": "A little kitten",
+   "zh": "一只小猫咪",
+   "start": 85.49,
+   "end": 87.46,
+   "words": [
+    {
+     "w": "A",
+     "start": 85.51,
+     "end": 86.14
+    },
+    {
+     "w": "little",
+     "start": 86.14,
+     "end": 86.77
+    },
+    {
+     "w": "kitten",
+     "start": 86.77,
+     "end": 87.4
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 15,
+   "en": "You must be blue point",
+   "zh": "一定是蓝重点色",
+   "start": 87.46,
+   "end": 89.76,
+   "words": [
+    {
+     "w": "You",
+     "start": 87.48,
+     "end": 87.924
+    },
+    {
+     "w": "must",
+     "start": 87.924,
+     "end": 88.368
+    },
+    {
+     "w": "be",
+     "start": 88.368,
+     "end": 88.812
+    },
+    {
+     "w": "blue",
+     "start": 88.812,
+     "end": 89.256
+    },
+    {
+     "w": "point",
+     "start": 89.256,
+     "end": 89.7
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 16,
+   "en": "Meowing a lot",
+   "zh": "很爱叫",
+   "start": 89.76,
+   "end": 92.58,
+   "words": [
+    {
+     "w": "Meowing",
+     "start": 89.78,
+     "end": 91.15
+    },
+    {
+     "w": "a",
+     "start": 91.15,
+     "end": 91.835
+    },
+    {
+     "w": "lot",
+     "start": 91.835,
+     "end": 92.52
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 17,
+   "en": "Hissing a lot",
+   "zh": "很爱哈气",
+   "start": 92.58,
+   "end": 94.39,
+   "words": [
+    {
+     "w": "Hissing",
+     "start": 92.6,
+     "end": 93.465
+    },
+    {
+     "w": "a",
+     "start": 93.465,
+     "end": 93.897
+    },
+    {
+     "w": "lot",
+     "start": 93.897,
+     "end": 94.33
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 18,
+   "en": "But you never purr",
+   "zh": "却从不肯咕噜",
+   "start": 94.39,
+   "end": 96.64,
+   "words": [
+    {
+     "w": "But",
+     "start": 94.41,
+     "end": 94.953
+    },
+    {
+     "w": "you",
+     "start": 94.953,
+     "end": 95.495
+    },
+    {
+     "w": "never",
+     "start": 95.495,
+     "end": 96.037
+    },
+    {
+     "w": "purr",
+     "start": 96.037,
+     "end": 96.58
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 19,
+   "en": "If you're a steak",
+   "zh": "如果你是一块牛排",
+   "start": 96.64,
+   "end": 99.5,
+   "words": [
+    {
+     "w": "If",
+     "start": 96.66,
+     "end": 97.355
+    },
+    {
+     "w": "you're",
+     "start": 97.355,
+     "end": 98.05
+    },
+    {
+     "w": "a",
+     "start": 98.05,
+     "end": 98.745
+    },
+    {
+     "w": "steak",
+     "start": 98.745,
+     "end": 99.44
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 20,
+   "en": "A fillet mignon covered in mushroom sauce",
+   "zh": "菲力，淋满蘑菇酱",
+   "start": 99.5,
+   "end": 103.75,
+   "words": [
+    {
+     "w": "A",
+     "start": 99.52,
+     "end": 99.983
+    },
+    {
+     "w": "fillet",
+     "start": 99.983,
+     "end": 100.447
+    },
+    {
+     "w": "mignon",
+     "start": 100.447,
+     "end": 101.373
+    },
+    {
+     "w": "covered",
+     "start": 101.373,
+     "end": 101.837
+    },
+    {
+     "w": "in",
+     "start": 101.837,
+     "end": 102.3
+    },
+    {
+     "w": "mushroom",
+     "start": 102.3,
+     "end": 103.227
+    },
+    {
+     "w": "sauce",
+     "start": 103.227,
+     "end": 103.69
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 21,
+   "en": "Browned on the outside",
+   "zh": "外表煎得焦褐",
+   "start": 103.75,
+   "end": 106.66,
+   "words": [
+    {
+     "w": "Browned",
+     "start": 103.77,
+     "end": 104.336
+    },
+    {
+     "w": "on",
+     "start": 104.336,
+     "end": 104.902
+    },
+    {
+     "w": "the",
+     "start": 104.902,
+     "end": 105.468
+    },
+    {
+     "w": "outside",
+     "start": 105.468,
+     "end": 106.6
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 22,
+   "en": "Medium-rare inside",
+   "zh": "内里三分熟",
+   "start": 106.66,
+   "end": 109.72,
+   "words": [
+    {
+     "w": "Medium-rare",
+     "start": 106.68,
+     "end": 108.17
+    },
+    {
+     "w": "inside",
+     "start": 108.17,
+     "end": 109.66
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 23,
+   "en": "If you turn into a flower",
+   "zh": "如果你变成一朵花",
+   "start": 109.72,
+   "end": 113.15,
+   "words": [
+    {
+     "w": "If",
+     "start": 109.74,
+     "end": 110.219
+    },
+    {
+     "w": "you",
+     "start": 110.219,
+     "end": 110.697
+    },
+    {
+     "w": "turn",
+     "start": 110.697,
+     "end": 111.176
+    },
+    {
+     "w": "into",
+     "start": 111.176,
+     "end": 112.133
+    },
+    {
+     "w": "a",
+     "start": 112.133,
+     "end": 112.611
+    },
+    {
+     "w": "flower",
+     "start": 112.611,
+     "end": 113.09
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 24,
+   "en": "You must be the most delicate ever",
+   "zh": "那一定是世上最娇嫩的一朵",
+   "start": 113.15,
+   "end": 116.6,
+   "words": [
+    {
+     "w": "You",
+     "start": 113.17,
+     "end": 113.591
+    },
+    {
+     "w": "must",
+     "start": 113.591,
+     "end": 114.013
+    },
+    {
+     "w": "be",
+     "start": 114.013,
+     "end": 114.434
+    },
+    {
+     "w": "the",
+     "start": 114.434,
+     "end": 114.855
+    },
+    {
+     "w": "most",
+     "start": 114.855,
+     "end": 115.276
+    },
+    {
+     "w": "delicate",
+     "start": 115.276,
+     "end": 116.119
+    },
+    {
+     "w": "ever",
+     "start": 116.119,
+     "end": 116.54
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 25,
+   "en": "Even if you bloom just occasionally",
+   "zh": "哪怕只是偶尔绽放",
+   "start": 116.6,
+   "end": 119.96,
+   "words": [
+    {
+     "w": "Even",
+     "start": 116.62,
+     "end": 116.948
+    },
+    {
+     "w": "if",
+     "start": 116.948,
+     "end": 117.276
+    },
+    {
+     "w": "you",
+     "start": 117.276,
+     "end": 117.604
+    },
+    {
+     "w": "bloom",
+     "start": 117.604,
+     "end": 117.932
+    },
+    {
+     "w": "just",
+     "start": 117.932,
+     "end": 118.26
+    },
+    {
+     "w": "occasionally",
+     "start": 118.26,
+     "end": 119.9
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 26,
+   "en": "You're the only perfect flower for me",
+   "zh": "你就是我唯一完美的花",
+   "start": 119.96,
+   "end": 123.44,
+   "words": [
+    {
+     "w": "You're",
+     "start": 119.98,
+     "end": 120.405
+    },
+    {
+     "w": "the",
+     "start": 120.405,
+     "end": 120.83
+    },
+    {
+     "w": "only",
+     "start": 120.83,
+     "end": 121.68
+    },
+    {
+     "w": "perfect",
+     "start": 121.68,
+     "end": 122.105
+    },
+    {
+     "w": "flower",
+     "start": 122.105,
+     "end": 122.53
+    },
+    {
+     "w": "for",
+     "start": 122.53,
+     "end": 122.955
+    },
+    {
+     "w": "me",
+     "start": 122.955,
+     "end": 123.38
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 27,
+   "en": "If you turn into a human",
+   "zh": "如果你变成一个人",
+   "start": 123.44,
+   "end": 126.82,
+   "words": [
+    {
+     "w": "If",
+     "start": 123.46,
+     "end": 123.872
+    },
+    {
+     "w": "you",
+     "start": 123.872,
+     "end": 124.285
+    },
+    {
+     "w": "turn",
+     "start": 124.285,
+     "end": 124.697
+    },
+    {
+     "w": "into",
+     "start": 124.697,
+     "end": 125.522
+    },
+    {
+     "w": "a",
+     "start": 125.522,
+     "end": 125.935
+    },
+    {
+     "w": "human",
+     "start": 125.935,
+     "end": 126.76
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 28,
+   "en": "I'd like all the warmth coming from your hands",
+   "zh": "我想得到你掌心全部的暖",
+   "start": 126.82,
+   "end": 130.24,
+   "words": [
+    {
+     "w": "I'd",
+     "start": 126.84,
+     "end": 127.174
+    },
+    {
+     "w": "like",
+     "start": 127.174,
+     "end": 127.508
+    },
+    {
+     "w": "all",
+     "start": 127.508,
+     "end": 127.842
+    },
+    {
+     "w": "the",
+     "start": 127.842,
+     "end": 128.176
+    },
+    {
+     "w": "warmth",
+     "start": 128.176,
+     "end": 128.51
+    },
+    {
+     "w": "coming",
+     "start": 128.51,
+     "end": 129.178
+    },
+    {
+     "w": "from",
+     "start": 129.178,
+     "end": 129.512
+    },
+    {
+     "w": "your",
+     "start": 129.512,
+     "end": 129.846
+    },
+    {
+     "w": "hands",
+     "start": 129.846,
+     "end": 130.18
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 29,
+   "en": "Bit of stinky breath, with hair that's unruly",
+   "zh": "呼吸有点臭，头发乱糟糟",
+   "start": 130.24,
+   "end": 133.65,
+   "words": [
+    {
+     "w": "Bit",
+     "start": 130.26,
+     "end": 130.563
+    },
+    {
+     "w": "of",
+     "start": 130.563,
+     "end": 130.865
+    },
+    {
+     "w": "stinky",
+     "start": 130.865,
+     "end": 131.471
+    },
+    {
+     "w": "breath,",
+     "start": 131.471,
+     "end": 131.774
+    },
+    {
+     "w": "with",
+     "start": 131.774,
+     "end": 132.076
+    },
+    {
+     "w": "hair",
+     "start": 132.076,
+     "end": 132.379
+    },
+    {
+     "w": "that's",
+     "start": 132.379,
+     "end": 132.682
+    },
+    {
+     "w": "unruly",
+     "start": 132.682,
+     "end": 133.59
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 30,
+   "en": "You're the only perfect human for me",
+   "zh": "你就是我唯一完美的人",
+   "start": 133.65,
+   "end": 137.09,
+   "words": [
+    {
+     "w": "You're",
+     "start": 133.67,
+     "end": 134.043
+    },
+    {
+     "w": "the",
+     "start": 134.043,
+     "end": 134.417
+    },
+    {
+     "w": "only",
+     "start": 134.417,
+     "end": 135.163
+    },
+    {
+     "w": "perfect",
+     "start": 135.163,
+     "end": 135.537
+    },
+    {
+     "w": "human",
+     "start": 135.537,
+     "end": 136.283
+    },
+    {
+     "w": "for",
+     "start": 136.283,
+     "end": 136.657
+    },
+    {
+     "w": "me",
+     "start": 136.657,
+     "end": 137.03
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 31,
+   "en": "I'm searching",
+   "zh": "我在寻找",
+   "start": 137.09,
+   "end": 151.84,
+   "words": [
+    {
+     "w": "I'm",
+     "start": 137.11,
+     "end": 142.0
+    },
+    {
+     "w": "searching",
+     "start": 142.0,
+     "end": 151.78
+    }
+   ],
+   "stage": "03 ROUTE"
+  },
+  {
+   "id": 32,
+   "en": "If you're a piece",
+   "zh": "如果你是一块碎片",
+   "start": 151.84,
+   "end": 154.79,
+   "words": [
+    {
+     "w": "If",
+     "start": 151.86,
+     "end": 152.578
+    },
+    {
+     "w": "you're",
+     "start": 152.578,
+     "end": 153.295
+    },
+    {
+     "w": "a",
+     "start": 153.295,
+     "end": 154.012
+    },
+    {
+     "w": "piece",
+     "start": 154.012,
+     "end": 154.73
+    }
+   ],
+   "stage": "04 FORGET"
+  },
+  {
+   "id": 33,
+   "en": "A piece of sheet",
+   "zh": "一张薄薄的纸片",
+   "start": 154.79,
+   "end": 156.42,
+   "words": [
+    {
+     "w": "A",
+     "start": 154.81,
+     "end": 155.197
+    },
+    {
+     "w": "piece",
+     "start": 155.197,
+     "end": 155.585
+    },
+    {
+     "w": "of",
+     "start": 155.585,
+     "end": 155.973
+    },
+    {
+     "w": "sheet",
+     "start": 155.973,
+     "end": 156.36
+    }
+   ],
+   "stage": "04 FORGET"
+  },
+  {
+   "id": 34,
+   "en": "You must be… U-Um?",
+   "zh": "那你一定是……呃、那个？",
+   "start": 156.42,
+   "end": 158.85,
+   "words": [
+    {
+     "w": "You",
+     "start": 156.44,
+     "end": 157.028
+    },
+    {
+     "w": "must",
+     "start": 157.028,
+     "end": 157.615
+    },
+    {
+     "w": "be…",
+     "start": 157.615,
+     "end": 158.202
+    },
+    {
+     "w": "U-Um?",
+     "start": 158.202,
+     "end": 158.79
+    }
+   ],
+   "stage": "04 FORGET"
+  },
+  {
+   "id": 35,
+   "en": "What,what's it called?",
+   "zh": "那、那个词怎么说来着？",
+   "start": 158.85,
+   "end": 161.64,
+   "words": [
+    {
+     "w": "What,what's",
+     "start": 158.87,
+     "end": 160.225
+    },
+    {
+     "w": "it",
+     "start": 160.225,
+     "end": 160.902
+    },
+    {
+     "w": "called?",
+     "start": 160.902,
+     "end": 161.58
+    }
+   ],
+   "stage": "04 FORGET"
+  },
+  {
+   "id": 36,
+   "en": "What's that word again?",
+   "zh": "那个词又是什么？",
+   "start": 161.64,
+   "end": 163.66,
+   "words": [
+    {
+     "w": "What's",
+     "start": 161.66,
+     "end": 162.048
+    },
+    {
+     "w": "that",
+     "start": 162.048,
+     "end": 162.436
+    },
+    {
+     "w": "word",
+     "start": 162.436,
+     "end": 162.824
+    },
+    {
+     "w": "again?",
+     "start": 162.824,
+     "end": 163.6
+    }
+   ],
+   "stage": "04 FORGET"
+  },
+  {
+   "id": 37,
+   "en": "\"Do-o-o-o-ope\"?",
+   "zh": "“嗨——？”（Dope）",
+   "start": 163.66,
+   "end": 165.73,
+   "words": [
+    {
+     "w": "\"Do-o-o-o-ope\"?",
+     "start": 163.68,
+     "end": 165.67
+    }
+   ],
+   "stage": "04 FORGET"
+  },
+  {
+   "id": 38,
+   "en": "If you could stay",
+   "zh": "如果你能留下",
+   "start": 165.73,
+   "end": 168.6,
+   "words": [
+    {
+     "w": "If",
+     "start": 165.75,
+     "end": 166.447
+    },
+    {
+     "w": "you",
+     "start": 166.447,
+     "end": 167.145
+    },
+    {
+     "w": "could",
+     "start": 167.145,
+     "end": 167.843
+    },
+    {
+     "w": "stay",
+     "start": 167.843,
+     "end": 168.54
+    }
+   ],
+   "stage": "04 FORGET"
+  },
+  {
+   "id": 39,
+   "en": "Stay there where you are",
+   "zh": "就停在那里，别动",
+   "start": 168.6,
+   "end": 170.43,
+   "words": [
+    {
+     "w": "Stay",
+     "start": 168.62,
+     "end": 168.97
+    },
+    {
+     "w": "there",
+     "start": 168.97,
+     "end": 169.32
+    },
+    {
+     "w": "where",
+     "start": 169.32,
+     "end": 169.67
+    },
+    {
+     "w": "you",
+     "start": 169.67,
+     "end": 170.02
+    },
+    {
+     "w": "are",
+     "start": 170.02,
+     "end": 170.37
+    }
+   ],
+   "stage": "04 FORGET"
+  },
+  {
+   "id": 40,
+   "en": "So I can… U-Um?",
+   "zh": "这样我就能……呃、那个？",
+   "start": 170.43,
+   "end": 172.28,
+   "words": [
+    {
+     "w": "So",
+     "start": 170.45,
+     "end": 170.893
+    },
+    {
+     "w": "I",
+     "start": 170.893,
+     "end": 171.335
+    },
+    {
+     "w": "can…",
+     "start": 171.335,
+     "end": 171.778
+    },
+    {
+     "w": "U-Um?",
+     "start": 171.778,
+     "end": 172.22
+    }
+   ],
+   "stage": "04 FORGET"
+  },
+  {
+   "id": 41,
+   "en": "Oh,what,what's it called?",
+   "zh": "哦，那个词，怎么说来着？",
+   "start": 172.28,
+   "end": 175.43,
+   "words": [
+    {
+     "w": "Oh,what,what's",
+     "start": 172.3,
+     "end": 174.142
+    },
+    {
+     "w": "it",
+     "start": 174.142,
+     "end": 174.756
+    },
+    {
+     "w": "called?",
+     "start": 174.756,
+     "end": 175.37
+    }
+   ],
+   "stage": "04 FORGET"
+  },
+  {
+   "id": 42,
+   "en": "What's that word again?",
+   "zh": "那个词又是什么？",
+   "start": 175.43,
+   "end": 177.35,
+   "words": [
+    {
+     "w": "What's",
+     "start": 175.45,
+     "end": 175.818
+    },
+    {
+     "w": "that",
+     "start": 175.818,
+     "end": 176.186
+    },
+    {
+     "w": "word",
+     "start": 176.186,
+     "end": 176.554
+    },
+    {
+     "w": "again?",
+     "start": 176.554,
+     "end": 177.29
+    }
+   ],
+   "stage": "04 FORGET"
+  },
+  {
+   "id": 43,
+   "en": "\"Lo-o-o-ove\"?",
+   "zh": "“爱——？”（Love）",
+   "start": 177.35,
+   "end": 179.47,
+   "words": [
+    {
+     "w": "\"Lo-o-o-ove\"?",
+     "start": 177.37,
+     "end": 179.41
+    }
+   ],
+   "stage": "04 FORGET"
+  },
+  {
+   "id": 44,
+   "en": "I'm searching for",
+   "zh": "我在寻找着",
+   "start": 179.47,
+   "end": 180.97,
+   "words": [
+    {
+     "w": "I'm",
+     "start": 179.49,
+     "end": 179.845
+    },
+    {
+     "w": "searching",
+     "start": 179.845,
+     "end": 180.555
+    },
+    {
+     "w": "for",
+     "start": 180.555,
+     "end": 180.91
+    }
+   ],
+   "stage": "05 EVERYWHERE"
+  },
+  {
+   "id": 45,
+   "en": "Searching for you everywhere",
+   "zh": "到每一个角落去找你",
+   "start": 180.97,
+   "end": 182.65,
+   "words": [
+    {
+     "w": "Searching",
+     "start": 180.99,
+     "end": 181.63
+    },
+    {
+     "w": "for",
+     "start": 181.63,
+     "end": 181.95
+    },
+    {
+     "w": "you",
+     "start": 181.95,
+     "end": 182.27
+    },
+    {
+     "w": "everywhere",
+     "start": 182.27,
+     "end": 182.59
+    }
+   ],
+   "stage": "05 EVERYWHERE"
+  },
+  {
+   "id": 46,
+   "en": "I can see you in most everything",
+   "zh": "几乎万物里都能看见你",
+   "start": 182.65,
+   "end": 186.43,
+   "words": [
+    {
+     "w": "I",
+     "start": 182.67,
+     "end": 183.133
+    },
+    {
+     "w": "can",
+     "start": 183.133,
+     "end": 183.595
+    },
+    {
+     "w": "see",
+     "start": 183.595,
+     "end": 184.058
+    },
+    {
+     "w": "you",
+     "start": 184.058,
+     "end": 184.52
+    },
+    {
+     "w": "in",
+     "start": 184.52,
+     "end": 184.983
+    },
+    {
+     "w": "most",
+     "start": 184.983,
+     "end": 185.445
+    },
+    {
+     "w": "everything",
+     "start": 185.445,
+     "end": 186.37
+    }
+   ],
+   "stage": "05 EVERYWHERE"
+  },
+  {
+   "id": 47,
+   "en": "I'm searching for",
+   "zh": "我在寻找着",
+   "start": 186.43,
+   "end": 187.76,
+   "words": [
+    {
+     "w": "I'm",
+     "start": 186.45,
+     "end": 186.763
+    },
+    {
+     "w": "searching",
+     "start": 186.763,
+     "end": 187.387
+    },
+    {
+     "w": "for",
+     "start": 187.387,
+     "end": 187.7
+    }
+   ],
+   "stage": "05 EVERYWHERE"
+  },
+  {
+   "id": 48,
+   "en": "Searching for you everywhere",
+   "zh": "到每一个角落去找你",
+   "start": 187.76,
+   "end": 189.37,
+   "words": [
+    {
+     "w": "Searching",
+     "start": 187.78,
+     "end": 188.392
+    },
+    {
+     "w": "for",
+     "start": 188.392,
+     "end": 188.698
+    },
+    {
+     "w": "you",
+     "start": 188.698,
+     "end": 189.004
+    },
+    {
+     "w": "everywhere",
+     "start": 189.004,
+     "end": 189.31
+    }
+   ],
+   "stage": "05 EVERYWHERE"
+  },
+  {
+   "id": 49,
+   "en": "But somehow you can't stop transforming",
+   "zh": "可不知为何，你总在不停变形",
+   "start": 189.37,
+   "end": 193.28,
+   "words": [
+    {
+     "w": "But",
+     "start": 189.39,
+     "end": 189.816
+    },
+    {
+     "w": "somehow",
+     "start": 189.816,
+     "end": 190.667
+    },
+    {
+     "w": "you",
+     "start": 190.667,
+     "end": 191.092
+    },
+    {
+     "w": "can't",
+     "start": 191.092,
+     "end": 191.518
+    },
+    {
+     "w": "stop",
+     "start": 191.518,
+     "end": 191.943
+    },
+    {
+     "w": "transforming",
+     "start": 191.943,
+     "end": 193.22
+    }
+   ],
+   "stage": "05 EVERYWHERE"
+  },
+  {
+   "id": 50,
+   "en": "I'm searching for, searching for, searching for",
+   "zh": "我在找，在找，在找",
+   "start": 193.28,
+   "end": 196.32,
+   "words": [
+    {
+     "w": "I'm",
+     "start": 193.3,
+     "end": 193.596
+    },
+    {
+     "w": "searching",
+     "start": 193.596,
+     "end": 194.188
+    },
+    {
+     "w": "for,",
+     "start": 194.188,
+     "end": 194.484
+    },
+    {
+     "w": "searching",
+     "start": 194.484,
+     "end": 195.076
+    },
+    {
+     "w": "for,",
+     "start": 195.076,
+     "end": 195.372
+    },
+    {
+     "w": "searching",
+     "start": 195.372,
+     "end": 195.964
+    },
+    {
+     "w": "for",
+     "start": 195.964,
+     "end": 196.26
+    }
+   ],
+   "stage": "05 EVERYWHERE"
+  },
+  {
+   "id": 51,
+   "en": "Searching for, searching for, searching for",
+   "zh": "找啊，找啊，找啊",
+   "start": 196.32,
+   "end": 198.93,
+   "words": [
+    {
+     "w": "Searching",
+     "start": 196.34,
+     "end": 196.902
+    },
+    {
+     "w": "for,",
+     "start": 196.902,
+     "end": 197.183
+    },
+    {
+     "w": "searching",
+     "start": 197.183,
+     "end": 197.746
+    },
+    {
+     "w": "for,",
+     "start": 197.746,
+     "end": 198.027
+    },
+    {
+     "w": "searching",
+     "start": 198.027,
+     "end": 198.589
+    },
+    {
+     "w": "for",
+     "start": 198.589,
+     "end": 198.87
+    }
+   ],
+   "stage": "05 EVERYWHERE"
+  },
+  {
+   "id": 52,
+   "en": "A-Ah",
+   "zh": "啊——",
+   "start": 198.93,
+   "end": 200.25,
+   "words": [
+    {
+     "w": "A-Ah",
+     "start": 198.95,
+     "end": 200.19
+    }
+   ],
+   "stage": "05 EVERYWHERE"
+  },
+  {
+   "id": 53,
+   "en": "I'm searching for, searching for, searching for",
+   "zh": "我在找，在找，在找",
+   "start": 200.25,
+   "end": 203.16,
+   "words": [
+    {
+     "w": "I'm",
+     "start": 200.27,
+     "end": 200.553
+    },
+    {
+     "w": "searching",
+     "start": 200.553,
+     "end": 201.119
+    },
+    {
+     "w": "for,",
+     "start": 201.119,
+     "end": 201.402
+    },
+    {
+     "w": "searching",
+     "start": 201.402,
+     "end": 201.968
+    },
+    {
+     "w": "for,",
+     "start": 201.968,
+     "end": 202.251
+    },
+    {
+     "w": "searching",
+     "start": 202.251,
+     "end": 202.817
+    },
+    {
+     "w": "for",
+     "start": 202.817,
+     "end": 203.1
+    }
+   ],
+   "stage": "05 EVERYWHERE"
+  },
+  {
+   "id": 54,
+   "en": "My old self that's gone since you have left",
+   "zh": "你离开后，那个旧日的我也消失了",
+   "start": 203.16,
+   "end": 207.14,
+   "words": [
+    {
+     "w": "My",
+     "start": 203.18,
+     "end": 203.613
+    },
+    {
+     "w": "old",
+     "start": 203.613,
+     "end": 204.047
+    },
+    {
+     "w": "self",
+     "start": 204.047,
+     "end": 204.48
+    },
+    {
+     "w": "that's",
+     "start": 204.48,
+     "end": 204.913
+    },
+    {
+     "w": "gone",
+     "start": 204.913,
+     "end": 205.347
+    },
+    {
+     "w": "since",
+     "start": 205.347,
+     "end": 205.78
+    },
+    {
+     "w": "you",
+     "start": 205.78,
+     "end": 206.213
+    },
+    {
+     "w": "have",
+     "start": 206.213,
+     "end": 206.647
+    },
+    {
+     "w": "left",
+     "start": 206.647,
+     "end": 207.08
+    }
+   ],
+   "stage": "05 EVERYWHERE"
+  },
+  {
+   "id": 55,
+   "en": "Each one of us has a bucket of love",
+   "zh": "我们每人都有一桶爱",
+   "start": 207.14,
+   "end": 214.35,
+   "words": [
+    {
+     "w": "Each",
+     "start": 207.16,
+     "end": 207.952
+    },
+    {
+     "w": "one",
+     "start": 207.952,
+     "end": 208.744
+    },
+    {
+     "w": "of",
+     "start": 208.744,
+     "end": 209.537
+    },
+    {
+     "w": "us",
+     "start": 209.537,
+     "end": 210.329
+    },
+    {
+     "w": "has",
+     "start": 210.329,
+     "end": 211.121
+    },
+    {
+     "w": "a",
+     "start": 211.121,
+     "end": 211.913
+    },
+    {
+     "w": "bucket",
+     "start": 211.913,
+     "end": 212.706
+    },
+    {
+     "w": "of",
+     "start": 212.706,
+     "end": 213.498
+    },
+    {
+     "w": "love",
+     "start": 213.498,
+     "end": 214.29
+    }
+   ],
+   "stage": "06 MERGE"
+  },
+  {
+   "id": 56,
+   "en": "Some of us empty, some of us filled up",
+   "zh": "有的空着，有的满溢",
+   "start": 214.35,
+   "end": 221.18,
+   "words": [
+    {
+     "w": "Some",
+     "start": 214.37,
+     "end": 215.12
+    },
+    {
+     "w": "of",
+     "start": 215.12,
+     "end": 215.87
+    },
+    {
+     "w": "us",
+     "start": 215.87,
+     "end": 216.62
+    },
+    {
+     "w": "empty,",
+     "start": 216.62,
+     "end": 217.37
+    },
+    {
+     "w": "some",
+     "start": 217.37,
+     "end": 218.12
+    },
+    {
+     "w": "of",
+     "start": 218.12,
+     "end": 218.87
+    },
+    {
+     "w": "us",
+     "start": 218.87,
+     "end": 219.62
+    },
+    {
+     "w": "filled",
+     "start": 219.62,
+     "end": 220.37
+    },
+    {
+     "w": "up",
+     "start": 220.37,
+     "end": 221.12
+    }
+   ],
+   "stage": "06 MERGE"
+  },
+  {
+   "id": 57,
+   "en": "Cut this into pieces, break us down to the cell",
+   "zh": "把它切成碎片，一直拆到细胞",
+   "start": 221.18,
+   "end": 228.16,
+   "words": [
+    {
+     "w": "Cut",
+     "start": 221.2,
+     "end": 221.827
+    },
+    {
+     "w": "this",
+     "start": 221.827,
+     "end": 222.455
+    },
+    {
+     "w": "into",
+     "start": 222.455,
+     "end": 223.709
+    },
+    {
+     "w": "pieces,",
+     "start": 223.709,
+     "end": 224.336
+    },
+    {
+     "w": "break",
+     "start": 224.336,
+     "end": 224.964
+    },
+    {
+     "w": "us",
+     "start": 224.964,
+     "end": 225.591
+    },
+    {
+     "w": "down",
+     "start": 225.591,
+     "end": 226.218
+    },
+    {
+     "w": "to",
+     "start": 226.218,
+     "end": 226.845
+    },
+    {
+     "w": "the",
+     "start": 226.845,
+     "end": 227.473
+    },
+    {
+     "w": "cell",
+     "start": 227.473,
+     "end": 228.1
+    }
+   ],
+   "stage": "06 MERGE"
+  },
+  {
+   "id": 58,
+   "en": "Merge us back up, we have evolved now",
+   "zh": "再拼合回来，我们已经进化了",
+   "start": 228.16,
+   "end": 233.77,
+   "words": [
+    {
+     "w": "Merge",
+     "start": 228.18,
+     "end": 228.871
+    },
+    {
+     "w": "us",
+     "start": 228.871,
+     "end": 229.562
+    },
+    {
+     "w": "back",
+     "start": 229.562,
+     "end": 230.254
+    },
+    {
+     "w": "up,",
+     "start": 230.254,
+     "end": 230.945
+    },
+    {
+     "w": "we",
+     "start": 230.945,
+     "end": 231.636
+    },
+    {
+     "w": "have",
+     "start": 231.636,
+     "end": 232.328
+    },
+    {
+     "w": "evolved",
+     "start": 232.328,
+     "end": 233.019
+    },
+    {
+     "w": "now",
+     "start": 233.019,
+     "end": 233.71
+    }
+   ],
+   "stage": "06 MERGE"
+  },
+  {
+   "id": 59,
+   "en": "If you turn into a flower",
+   "zh": "如果你变成一朵花",
+   "start": 233.77,
+   "end": 237.09,
+   "words": [
+    {
+     "w": "If",
+     "start": 233.79,
+     "end": 234.253
+    },
+    {
+     "w": "you",
+     "start": 234.253,
+     "end": 234.716
+    },
+    {
+     "w": "turn",
+     "start": 234.716,
+     "end": 235.179
+    },
+    {
+     "w": "into",
+     "start": 235.179,
+     "end": 236.104
+    },
+    {
+     "w": "a",
+     "start": 236.104,
+     "end": 236.567
+    },
+    {
+     "w": "flower",
+     "start": 236.567,
+     "end": 237.03
+    }
+   ],
+   "stage": "07 RESURFACE"
+  },
+  {
+   "id": 60,
+   "en": "You must be the most delicate ever",
+   "zh": "那一定是世上最娇嫩的一朵",
+   "start": 237.09,
+   "end": 240.48,
+   "words": [
+    {
+     "w": "You",
+     "start": 237.11,
+     "end": 237.524
+    },
+    {
+     "w": "must",
+     "start": 237.524,
+     "end": 237.938
+    },
+    {
+     "w": "be",
+     "start": 237.938,
+     "end": 238.351
+    },
+    {
+     "w": "the",
+     "start": 238.351,
+     "end": 238.765
+    },
+    {
+     "w": "most",
+     "start": 238.765,
+     "end": 239.179
+    },
+    {
+     "w": "delicate",
+     "start": 239.179,
+     "end": 240.006
+    },
+    {
+     "w": "ever",
+     "start": 240.006,
+     "end": 240.42
+    }
+   ],
+   "stage": "07 RESURFACE"
+  },
+  {
+   "id": 61,
+   "en": "Even if you bloom just occasionally",
+   "zh": "哪怕只是偶尔绽放",
+   "start": 240.48,
+   "end": 243.94,
+   "words": [
+    {
+     "w": "Even",
+     "start": 240.5,
+     "end": 240.838
+    },
+    {
+     "w": "if",
+     "start": 240.838,
+     "end": 241.176
+    },
+    {
+     "w": "you",
+     "start": 241.176,
+     "end": 241.514
+    },
+    {
+     "w": "bloom",
+     "start": 241.514,
+     "end": 241.852
+    },
+    {
+     "w": "just",
+     "start": 241.852,
+     "end": 242.19
+    },
+    {
+     "w": "occasionally",
+     "start": 242.19,
+     "end": 243.88
+    }
+   ],
+   "stage": "07 RESURFACE"
+  },
+  {
+   "id": 62,
+   "en": "You're the only perfect flower for me",
+   "zh": "你就是我唯一完美的花",
+   "start": 243.94,
+   "end": 247.37,
+   "words": [
+    {
+     "w": "You're",
+     "start": 243.96,
+     "end": 244.379
+    },
+    {
+     "w": "the",
+     "start": 244.379,
+     "end": 244.798
+    },
+    {
+     "w": "only",
+     "start": 244.798,
+     "end": 245.635
+    },
+    {
+     "w": "perfect",
+     "start": 245.635,
+     "end": 246.054
+    },
+    {
+     "w": "flower",
+     "start": 246.054,
+     "end": 246.472
+    },
+    {
+     "w": "for",
+     "start": 246.472,
+     "end": 246.891
+    },
+    {
+     "w": "me",
+     "start": 246.891,
+     "end": 247.31
+    }
+   ],
+   "stage": "07 RESURFACE"
+  },
+  {
+   "id": 63,
+   "en": "If you turn into a human",
+   "zh": "如果你变成一个人",
+   "start": 247.37,
+   "end": 250.78,
+   "words": [
+    {
+     "w": "If",
+     "start": 247.39,
+     "end": 247.806
+    },
+    {
+     "w": "you",
+     "start": 247.806,
+     "end": 248.223
+    },
+    {
+     "w": "turn",
+     "start": 248.223,
+     "end": 248.639
+    },
+    {
+     "w": "into",
+     "start": 248.639,
+     "end": 249.471
+    },
+    {
+     "w": "a",
+     "start": 249.471,
+     "end": 249.887
+    },
+    {
+     "w": "human",
+     "start": 249.887,
+     "end": 250.72
+    }
+   ],
+   "stage": "07 RESURFACE"
+  },
+  {
+   "id": 64,
+   "en": "I like hug the warmth come from your hands",
+   "zh": "我想抱住你掌心传来的暖",
+   "start": 250.78,
+   "end": 254.22,
+   "words": [
+    {
+     "w": "I",
+     "start": 250.8,
+     "end": 251.173
+    },
+    {
+     "w": "like",
+     "start": 251.173,
+     "end": 251.547
+    },
+    {
+     "w": "hug",
+     "start": 251.547,
+     "end": 251.92
+    },
+    {
+     "w": "the",
+     "start": 251.92,
+     "end": 252.293
+    },
+    {
+     "w": "warmth",
+     "start": 252.293,
+     "end": 252.667
+    },
+    {
+     "w": "come",
+     "start": 252.667,
+     "end": 253.04
+    },
+    {
+     "w": "from",
+     "start": 253.04,
+     "end": 253.413
+    },
+    {
+     "w": "your",
+     "start": 253.413,
+     "end": 253.787
+    },
+    {
+     "w": "hands",
+     "start": 253.787,
+     "end": 254.16
+    }
+   ],
+   "stage": "07 RESURFACE"
+  },
+  {
+   "id": 65,
+   "en": "Bit of stinky breath with hair that is unruly",
+   "zh": "呼吸有点臭，头发乱糟糟",
+   "start": 254.22,
+   "end": 257.56,
+   "words": [
+    {
+     "w": "Bit",
+     "start": 254.24,
+     "end": 254.512
+    },
+    {
+     "w": "of",
+     "start": 254.512,
+     "end": 254.783
+    },
+    {
+     "w": "stinky",
+     "start": 254.783,
+     "end": 255.327
+    },
+    {
+     "w": "breath",
+     "start": 255.327,
+     "end": 255.598
+    },
+    {
+     "w": "with",
+     "start": 255.598,
+     "end": 255.87
+    },
+    {
+     "w": "hair",
+     "start": 255.87,
+     "end": 256.142
+    },
+    {
+     "w": "that",
+     "start": 256.142,
+     "end": 256.413
+    },
+    {
+     "w": "is",
+     "start": 256.413,
+     "end": 256.685
+    },
+    {
+     "w": "unruly",
+     "start": 256.685,
+     "end": 257.5
+    }
+   ],
+   "stage": "07 RESURFACE"
+  },
+  {
+   "id": 66,
+   "en": "You're the only perfect human for me",
+   "zh": "你就是我唯一完美的人",
+   "start": 257.56,
+   "end": 261.06,
+   "words": [
+    {
+     "w": "You're",
+     "start": 257.58,
+     "end": 257.96
+    },
+    {
+     "w": "the",
+     "start": 257.96,
+     "end": 258.34
+    },
+    {
+     "w": "only",
+     "start": 258.34,
+     "end": 259.1
+    },
+    {
+     "w": "perfect",
+     "start": 259.1,
+     "end": 259.48
+    },
+    {
+     "w": "human",
+     "start": 259.48,
+     "end": 260.24
+    },
+    {
+     "w": "for",
+     "start": 260.24,
+     "end": 260.62
+    },
+    {
+     "w": "me",
+     "start": 260.62,
+     "end": 261.0
+    }
+   ],
+   "stage": "07 RESURFACE"
+  },
+  {
+   "id": 67,
+   "en": "I'm searching",
+   "zh": "我在寻找",
+   "start": 261.06,
+   "end": 275.75,
+   "words": [
+    {
+     "w": "I'm",
+     "start": 261.08,
+     "end": 265.95
+    },
+    {
+     "w": "searching",
+     "start": 265.95,
+     "end": 275.69
+    }
+   ],
+   "stage": "07 RESURFACE"
+  },
+  {
+   "id": 68,
+   "en": "If you're a dog",
+   "zh": "如果你是一只狗",
+   "start": 275.75,
+   "end": 278.68,
+   "words": [
+    {
+     "w": "If",
+     "start": 275.77,
+     "end": 276.482
+    },
+    {
+     "w": "you're",
+     "start": 276.482,
+     "end": 277.195
+    },
+    {
+     "w": "a",
+     "start": 277.195,
+     "end": 277.908
+    },
+    {
+     "w": "dog",
+     "start": 277.908,
+     "end": 278.62
+    }
+   ],
+   "stage": "08 RESTORE"
+  },
+  {
+   "id": 69,
+   "en": "A little puppy",
+   "zh": "一只小狗狗",
+   "start": 278.68,
+   "end": 280.55,
+   "words": [
+    {
+     "w": "A",
+     "start": 278.7,
+     "end": 279.147
+    },
+    {
+     "w": "little",
+     "start": 279.147,
+     "end": 279.595
+    },
+    {
+     "w": "puppy",
+     "start": 279.595,
+     "end": 280.49
+    }
+   ],
+   "stage": "08 RESTORE"
+  },
+  {
+   "id": 70,
+   "en": "Going ruff ruff ruff",
+   "zh": "汪汪汪地叫",
+   "start": 280.55,
+   "end": 282.73,
+   "words": [
+    {
+     "w": "Going",
+     "start": 280.57,
+     "end": 281.095
+    },
+    {
+     "w": "ruff",
+     "start": 281.095,
+     "end": 281.62
+    },
+    {
+     "w": "ruff",
+     "start": 281.62,
+     "end": 282.145
+    },
+    {
+     "w": "ruff",
+     "start": 282.145,
+     "end": 282.67
+    }
+   ],
+   "stage": "08 RESTORE"
+  },
+  {
+   "id": 71,
+   "en": "If you're a fruit",
+   "zh": "如果你是一颗水果",
+   "start": 282.73,
+   "end": 285.58,
+   "words": [
+    {
+     "w": "If",
+     "start": 282.75,
+     "end": 283.442
+    },
+    {
+     "w": "you're",
+     "start": 283.442,
+     "end": 284.135
+    },
+    {
+     "w": "a",
+     "start": 284.135,
+     "end": 284.827
+    },
+    {
+     "w": "fruit",
+     "start": 284.827,
+     "end": 285.52
+    }
+   ],
+   "stage": "08 RESTORE"
+  },
+  {
+   "id": 72,
+   "en": "A tomato",
+   "zh": "一颗番茄",
+   "start": 285.58,
+   "end": 287.35,
+   "words": [
+    {
+     "w": "A",
+     "start": 285.6,
+     "end": 286.022
+    },
+    {
+     "w": "tomato",
+     "start": 286.022,
+     "end": 287.29
+    }
+   ],
+   "stage": "08 RESTORE"
+  },
+  {
+   "id": 73,
+   "en": "Full of juice",
+   "zh": "饱含汁水",
+   "start": 287.35,
+   "end": 294.447,
+   "words": [
+    {
+     "w": "Full",
+     "start": 287.37,
+     "end": 289.709
+    },
+    {
+     "w": "of",
+     "start": 289.709,
+     "end": 292.048
+    },
+    {
+     "w": "juice",
+     "start": 292.048,
+     "end": 294.387
+    }
+   ],
+   "stage": "08 RESTORE"
+  }
+ ],
+ "beats": [
+  0.088,
+  0.539,
+  0.974,
+  1.407,
+  1.842,
+  2.271,
+  2.702,
+  3.139,
+  3.576,
+  4.009,
+  4.442,
+  4.883,
+  5.324,
+  5.761,
+  6.19,
+  6.615,
+  7.052,
+  7.489,
+  7.92,
+  8.355,
+  8.79,
+  9.227,
+  9.672,
+  10.109,
+  10.544,
+  10.983,
+  11.416,
+  11.849,
+  12.284,
+  12.721,
+  13.146,
+  13.605,
+  14.018,
+  14.461,
+  14.896,
+  15.329,
+  15.758,
+  16.195,
+  16.616,
+  17.047,
+  17.474,
+  17.919,
+  18.346,
+  18.783,
+  19.216,
+  19.661,
+  20.084,
+  20.501,
+  20.938,
+  21.383,
+  21.826,
+  22.259,
+  22.696,
+  23.129,
+  23.555,
+  23.994,
+  24.424,
+  24.869,
+  25.294,
+  25.727,
+  26.163,
+  26.611,
+  27.033,
+  27.456,
+  27.889,
+  28.326,
+  28.763,
+  29.2,
+  29.631,
+  30.068,
+  30.493,
+  30.92,
+  31.359,
+  31.804,
+  32.233,
+  32.662,
+  33.099,
+  33.536,
+  33.965,
+  34.39,
+  34.813,
+  35.258,
+  35.681,
+  36.122,
+  36.549,
+  36.99,
+  37.413,
+  37.844,
+  38.279,
+  38.72,
+  39.141,
+  39.572,
+  39.999,
+  40.442,
+  40.863,
+  41.296,
+  41.717,
+  42.144,
+  42.599,
+  43.02,
+  43.467,
+  43.882,
+  44.325,
+  44.75,
+  45.189,
+  45.62,
+  46.053,
+  46.486,
+  46.931,
+  47.352,
+  47.789,
+  48.2,
+  48.636,
+  49.065,
+  49.52,
+  49.928,
+  50.376,
+  50.785,
+  51.22,
+  51.645,
+  52.094,
+  52.507,
+  52.946,
+  53.363,
+  53.808,
+  54.231,
+  54.658,
+  55.079,
+  55.494,
+  55.931,
+  56.382,
+  56.795,
+  57.238,
+  57.657,
+  58.082,
+  58.505,
+  58.952,
+  59.365,
+  59.796,
+  60.223,
+  60.666,
+  61.087,
+  61.506,
+  61.933,
+  62.362,
+  62.789,
+  63.224,
+  63.647,
+  64.092,
+  64.515,
+  64.94,
+  65.359,
+  65.79,
+  66.224,
+  66.653,
+  67.079,
+  67.525,
+  67.936,
+  68.371,
+  68.79,
+  69.233,
+  69.672,
+  70.096,
+  70.526,
+  70.958,
+  71.379,
+  71.814,
+  72.246,
+  72.669,
+  73.102,
+  73.531,
+  73.961,
+  74.39,
+  74.819,
+  75.248,
+  75.677,
+  76.116,
+  76.548,
+  76.982,
+  77.413,
+  77.841,
+  78.28,
+  78.71,
+  79.135,
+  79.562,
+  79.991,
+  80.422,
+  80.855,
+  81.255,
+  81.688,
+  82.13,
+  82.556,
+  82.969,
+  83.422,
+  83.869,
+  84.272,
+  84.727,
+  85.13,
+  85.576,
+  85.985,
+  86.428,
+  86.851,
+  87.296,
+  87.713,
+  88.158,
+  88.577,
+  89.01,
+  89.421,
+  89.848,
+  90.299,
+  90.74,
+  91.165,
+  91.612,
+  92.027,
+  92.444,
+  92.893,
+  93.33,
+  93.749,
+  94.192,
+  94.621,
+  95.06,
+  95.475,
+  95.916,
+  96.343,
+  96.774,
+  97.217,
+  97.654,
+  98.105,
+  98.542,
+  98.969,
+  99.398,
+  99.831,
+  100.274,
+  100.701,
+  101.138,
+  101.555,
+  101.998,
+  102.443,
+  102.882,
+  103.303,
+  103.744,
+  104.181,
+  104.616,
+  105.053,
+  105.502,
+  105.935,
+  106.368,
+  106.813,
+  107.218,
+  107.667,
+  108.092,
+  108.527,
+  108.962,
+  109.379,
+  109.82,
+  110.257,
+  110.677,
+  111.112,
+  111.558,
+  111.981,
+  112.415,
+  112.834,
+  113.278,
+  113.71,
+  114.141,
+  114.564,
+  115.003,
+  115.428,
+  115.871,
+  116.288,
+  116.727,
+  117.158,
+  117.587,
+  118.01,
+  118.447,
+  118.872,
+  119.315,
+  119.728,
+  120.167,
+  120.598,
+  121.025,
+  121.45,
+  121.887,
+  122.308,
+  122.751,
+  123.182,
+  123.599,
+  124.024,
+  124.457,
+  124.882,
+  125.323,
+  125.734,
+  126.185,
+  126.598,
+  127.037,
+  127.452,
+  127.895,
+  128.31,
+  128.751,
+  129.166,
+  129.611,
+  130.026,
+  130.459,
+  130.891,
+  131.312,
+  131.739,
+  132.17,
+  132.591,
+  133.028,
+  133.439,
+  133.888,
+  134.311,
+  134.744,
+  135.167,
+  135.598,
+  136.019,
+  136.466,
+  136.889,
+  137.314,
+  137.733,
+  138.156,
+  138.591,
+  139.02,
+  139.451,
+  139.882,
+  140.325,
+  140.756,
+  141.193,
+  141.608,
+  142.043,
+  142.468,
+  142.905,
+  143.34,
+  143.767,
+  144.2,
+  144.613,
+  145.048,
+  145.491,
+  145.934,
+  146.363,
+  146.782,
+  147.219,
+  147.654,
+  148.085,
+  148.512,
+  148.953,
+  149.382,
+  149.817,
+  150.258,
+  150.681,
+  151.125,
+  151.548,
+  151.967,
+  152.406,
+  152.841,
+  153.268,
+  153.715,
+  154.134,
+  154.573,
+  154.998,
+  155.455,
+  155.876,
+  156.315,
+  156.752,
+  157.199,
+  157.62,
+  158.059,
+  158.494,
+  158.911,
+  159.352,
+  159.791,
+  160.214,
+  160.661,
+  161.082,
+  161.515,
+  161.946,
+  162.377,
+  162.808,
+  163.243,
+  163.676,
+  164.121,
+  164.546,
+  164.975,
+  165.396,
+  165.823,
+  166.27,
+  166.707,
+  167.142,
+  167.581,
+  168.01,
+  168.443,
+  168.874,
+  169.311,
+  169.738,
+  170.181,
+  170.592,
+  171.035,
+  171.462,
+  171.899,
+  172.326,
+  172.757,
+  173.196,
+  173.631,
+  174.062,
+  174.503,
+  174.942,
+  175.379,
+  175.806,
+  176.232,
+  176.677,
+  177.095,
+  177.536,
+  177.965,
+  178.377,
+  178.822,
+  179.257,
+  179.68,
+  180.107,
+  180.552,
+  180.987,
+  181.414,
+  181.825,
+  182.27,
+  182.689,
+  183.116,
+  183.537,
+  183.976,
+  184.395,
+  184.836,
+  185.263,
+  185.694,
+  186.115,
+  186.544,
+  186.971,
+  187.404,
+  187.823,
+  188.256,
+  188.671,
+  189.108,
+  189.535,
+  189.958,
+  190.389,
+  190.82,
+  191.251,
+  191.682,
+  192.105,
+  192.55,
+  192.963,
+  193.391,
+  193.833,
+  194.261,
+  194.69,
+  195.117,
+  195.544,
+  195.965,
+  196.39,
+  196.813,
+  197.244,
+  197.667,
+  198.098,
+  198.521,
+  198.956,
+  199.387,
+  199.816,
+  200.243,
+  200.678,
+  201.117,
+  201.544,
+  201.963,
+  202.394,
+  202.831,
+  203.256,
+  203.685,
+  204.106,
+  204.535,
+  204.966,
+  205.393,
+  205.826,
+  206.259,
+  206.682,
+  207.109,
+  207.546,
+  207.975,
+  208.403,
+  208.827,
+  209.261,
+  209.678,
+  210.116,
+  210.54,
+  211.002,
+  211.413,
+  211.851,
+  212.278,
+  212.71,
+  213.146,
+  213.558,
+  214.006,
+  214.418,
+  214.876,
+  215.288,
+  215.726,
+  216.155,
+  216.576,
+  217.016,
+  217.454,
+  217.9,
+  218.312,
+  218.749,
+  219.186,
+  219.618,
+  220.044,
+  220.467,
+  220.914,
+  221.343,
+  221.781,
+  222.225,
+  222.649,
+  223.077,
+  223.507,
+  223.925,
+  224.39,
+  224.831,
+  225.267,
+  225.702,
+  226.127,
+  226.564,
+  226.993,
+  227.422,
+  227.852,
+  228.283,
+  228.71,
+  229.154,
+  229.572,
+  229.994,
+  230.412,
+  230.877,
+  231.288,
+  231.722,
+  232.151,
+  232.593,
+  233.026,
+  233.469,
+  233.902,
+  234.298,
+  234.713,
+  235.158,
+  235.593,
+  236.016,
+  236.463,
+  236.87,
+  237.309,
+  237.734,
+  238.167,
+  238.594,
+  239.031,
+  239.45,
+  239.899,
+  240.31,
+  240.745,
+  241.166,
+  241.587,
+  242.022,
+  242.465,
+  242.878,
+  243.319,
+  243.728,
+  244.169,
+  244.592,
+  245.025,
+  245.446,
+  245.879,
+  246.306,
+  246.745,
+  247.164,
+  247.577,
+  248.014,
+  248.425,
+  248.868,
+  249.303,
+  249.726,
+  250.173,
+  250.584,
+  251.028,
+  251.451,
+  251.881,
+  252.309,
+  252.748,
+  253.157,
+  253.594,
+  254.007,
+  254.45,
+  254.869,
+  255.298,
+  255.729,
+  256.164,
+  256.589,
+  257.024,
+  257.443,
+  257.886,
+  258.313,
+  258.74,
+  259.165,
+  259.6,
+  260.019,
+  260.464,
+  260.869,
+  261.304,
+  261.727,
+  262.173,
+  262.613,
+  263.035,
+  263.467,
+  263.899,
+  264.328,
+  264.757,
+  265.185,
+  265.612,
+  266.045,
+  266.475,
+  266.903,
+  267.332,
+  267.761,
+  268.19,
+  268.619,
+  269.055,
+  269.493,
+  269.926,
+  270.357,
+  270.784,
+  271.223,
+  271.661,
+  272.089,
+  272.519,
+  272.956,
+  273.389,
+  273.822,
+  274.225,
+  274.664,
+  275.093,
+  275.522,
+  275.951,
+  276.392,
+  276.831,
+  277.254,
+  277.693,
+  278.128,
+  278.559,
+  278.984,
+  279.441,
+  279.868,
+  280.309,
+  280.742,
+  281.191,
+  281.614,
+  282.045,
+  282.474,
+  282.891,
+  283.332,
+  283.773,
+  284.202,
+  284.649,
+  285.064,
+  285.505,
+  285.93,
+  286.361,
+  286.78,
+  287.225,
+  287.65,
+  288.097,
+  288.51,
+  288.943,
+  289.358,
+  289.801,
+  290.23,
+  290.658
+ ],
+ "memory_events": [
+  {
+   "t": 40.86,
+   "total": 9,
+   "writer": "kimi",
+   "file": "table_2",
+   "label": "memory: her 89% (8/9)"
+  },
+  {
+   "t": 54.46,
+   "total": 10,
+   "writer": "qwen",
+   "file": "eggplant_3",
+   "label": "memory: her 80% (8/10)"
+  },
+  {
+   "t": 68.17,
+   "total": 11,
+   "writer": "mimo",
+   "file": "cat_2",
+   "label": "memory: her 73% (8/11)"
+  },
+  {
+   "t": 76.4,
+   "total": 12,
+   "writer": "glm",
+   "file": "steak_2",
+   "label": "memory: her 67% (8/12)"
+  },
+  {
+   "t": 82.89,
+   "total": 14,
+   "writer": "kimi",
+   "file": "flower_2",
+   "label": "memory: her 57% (8/14)"
+  },
+  {
+   "t": 96.64,
+   "total": 16,
+   "writer": "doubao",
+   "file": "human_9",
+   "label": "memory: her 50% (8/16)"
+  },
+  {
+   "t": 109.72,
+   "total": 18,
+   "writer": "minimax",
+   "file": "piece",
+   "label": "memory: her 44% (8/18)"
+  },
+  {
+   "t": 123.44,
+   "total": 21,
+   "writer": "hy4",
+   "file": "dope",
+   "label": "memory: her 38% (8/21)"
+  },
+  {
+   "t": 137.09,
+   "total": 24,
+   "writer": "ernie",
+   "file": "love",
+   "label": "memory: her 33% (8/24)"
+  },
+  {
+   "t": 151.84,
+   "total": 28,
+   "writer": "step",
+   "file": "asked_again",
+   "label": "memory: her 29% (8/28)"
+  },
+  {
+   "t": 165.73,
+   "total": 32,
+   "writer": "longcat",
+   "file": "her_again",
+   "label": "memory: her 25% (8/32)"
+  },
+  {
+   "t": 179.47,
+   "total": 37,
+   "writer": "qwen",
+   "file": "flower_3",
+   "label": "memory: her 22% (8/37)"
+  },
+  {
+   "t": 193.28,
+   "total": 42,
+   "writer": "kimi",
+   "file": "human_10",
+   "label": "memory: her 19% (8/42)"
+  },
+  {
+   "t": 200.25,
+   "total": 48,
+   "writer": "glm",
+   "file": "table_3",
+   "label": "memory: her 17% (8/48)"
+  },
+  {
+   "t": 207.14,
+   "total": 54,
+   "writer": "mimo",
+   "file": "eggplant_4",
+   "label": "memory: her 15% (8/54)"
+  },
+  {
+   "t": 214.35,
+   "total": 60,
+   "writer": "doubao",
+   "file": "cat_3",
+   "label": "memory: her 13% (8/60)"
+  },
+  {
+   "t": 221.18,
+   "total": 66,
+   "writer": "minimax",
+   "file": "steak_3",
+   "label": "memory: her 12% (8/66)"
+  },
+  {
+   "t": 228.16,
+   "total": 72,
+   "writer": "merged",
+   "file": "merged",
+   "label": "memory: merged"
+  }
+ ],
+ "log_events": [
+  {
+   "t": 0.0,
+   "text": "boot dsh-v4.1-flash / cwd ~/memory/you/"
+  },
+  {
+   "t": 6.0,
+   "text": "query: world.search(you);"
+  },
+  {
+   "t": 14.36,
+   "text": "sort: 8 files in ~/memory/you/  (her 100%)"
+  },
+  {
+   "t": 40.86,
+   "text": "recall: candidate #1  table      sim 0.31"
+  },
+  {
+   "t": 54.46,
+   "text": "recall: candidate #2  eggplant   sim 0.28"
+  },
+  {
+   "t": 68.17,
+   "text": "search: fan-out 24 threads      ..."
+  },
+  {
+   "t": 82.89,
+   "text": "recall: candidate #3  cat        sim 0.22"
+  },
+  {
+   "t": 96.64,
+   "text": "recall: candidate #4  steak      sim 0.19"
+  },
+  {
+   "t": 109.72,
+   "text": "recall: candidate #5  flower     sim 0.26"
+  },
+  {
+   "t": 123.44,
+   "text": "recall: candidate #6  human      sim 0.13"
+  },
+  {
+   "t": 137.09,
+   "text": "warn: context overwritten by 3 peers"
+  },
+  {
+   "t": 151.84,
+   "text": "forget: word \"love\" -> low confidence"
+  },
+  {
+   "t": 163.66,
+   "text": "logit: dope 0.41 / love 0.09"
+  },
+  {
+   "t": 177.35,
+   "text": "logit: dope 0.12 / love 0.38"
+  },
+  {
+   "t": 179.47,
+   "text": "everywhere: recall rate 1.00, precision 0.00"
+  },
+  {
+   "t": 207.14,
+   "text": "merge: 72 files / 14 peers / 1 bucket"
+  },
+  {
+   "t": 221.18,
+   "text": "cut: tokenize 13,024 pieces"
+  },
+  {
+   "t": 228.16,
+   "text": "merge: done. we have evolved."
+  },
+  {
+   "t": 233.77,
+   "text": "resurface: depth 0 m"
+  },
+  {
+   "t": 261.06,
+   "text": "restore: memory -> ?"
+  },
+  {
+   "t": 290.8,
+   "text": "memory: ?"
+  }
+ ]
+}

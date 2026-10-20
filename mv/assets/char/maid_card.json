@@ -1,0 +1,37 @@
+{
+ "generated_by": "mv/assets/char/make_atlas.py",
+ "purpose": "the maid lift-skirt pose as a standalone single card (same art as atlas cell 9)",
+ "license": "source art CC BY-NC-SA 4.0 (see mv/ref/art/galgame/NOTICE.md)",
+ "image": {
+  "file": "maid_card.png",
+  "width": 1124,
+  "height": 2022,
+  "mode": "RGBA",
+  "colorspace": "sRGB"
+ },
+ "source": "mv/ref/art/galgame/maid-left.webp",
+ "rect_px": [
+  0,
+  0,
+  1124,
+  2022
+ ],
+ "alpha_bbox_in_cell_px": [
+  8,
+  8,
+  1115,
+  2013
+ ],
+ "content_size_px": [
+  1108,
+  2006
+ ],
+ "feet_anchor_px_in_cell": [
+  561.5,
+  2013.0
+ ],
+ "feet_anchor_uv": [
+  0.499555,
+  0.004451
+ ]
+}

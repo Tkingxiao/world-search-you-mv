@@ -1,0 +1,60 @@
+# ============================================================
+# world.search(you); — MV 工程 .gitignore
+# 仓库只保留：源码（build/tools/data/docs/overlay 脚本）+ README
+#             + 有版权来源标注的立绘素材（mv/assets/char、whale_silhouette.png）
+# 其余渲染缓存、成片、参考抓取、版权音频、系统字体一律忽略。
+# ============================================================
+
+# ---- 通用缓存 / 临时 ----
+__pycache__/
+*.py[cod]
+*.tmp
+*.bak
+*.orig
+.DS_Store
+Thumbs.db
+
+# ---- Blender 工程缓存（可脚本重建，不入库）----
+*.blend
+*.blend[0-9]
+*.123
+
+# ---- 渲染输出 / 母版 / 任务日志（全部可重建）----
+mv/out/
+out/
+*.mp4
+*.mkv
+*.wav
+*.npy
+*.npz
+
+# ---- 版权音频（Mili 原曲不随仓库分发，请自行准备）----
+*.flac
+*.mp3
+*.m4a
+*.lrc
+
+# ---- 参考抓取 / 上游仓库缓存（含第三方素材，不重新分发）----
+mv/ref/
+
+# ---- 字幕 HUD 生成的卡片图（由 make_cards.py 重建）----
+mv/overlay/cards/
+
+# ---- 系统/专有字体（MS YaHei、Consolas、Georgia 版权归微软，不入库）----
+mv/overlay/fonts/
+*.ttc
+*.otf
+# 注意：若你自行放置开源字体，可用 `!` 逐条加回
+
+# ---- 根目录误生成的 0 字节脚本 ----
+/core.py
+
+# ---- Windows 计划任务 / 调度产生的旁文件 ----
+*.bat
+*.pid
+dispatch_*.out
+run_*.bat
+launch_*.out
+
+# ---- 保留：有版权来源标注的官方立绘素材（CC BY-NC-SA 4.0，见 README 致谢）----
+# mv/assets/char/*.png 与 mv/assets/whale_silhouette.png 有意随仓库一起分发

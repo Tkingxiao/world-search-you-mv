@@ -1,0 +1,925 @@
+{
+ "generated_by": "mv/assets/char/make_atlas.py",
+ "purpose": "2.5D paper-doll texture atlas. Official illustration only - no Blender modelling.",
+ "license": "source art CC BY-NC-SA 4.0 (see mv/ref/art/galgame/NOTICE.md); this atlas is an adaptation under the same license",
+ "image": {
+  "file": "expr_atlas.png",
+  "width": 3372,
+  "height": 6066,
+  "mode": "RGBA",
+  "colorspace": "sRGB"
+ },
+ "grid": {
+  "cols": 3,
+  "rows": 3,
+  "cell_w": 1124,
+  "cell_h": 2022,
+  "padding_px": 8
+ },
+ "height_ref_px": 1653.0,
+ "anchor_convention": {
+  "aligned_on": "feet anchor = bottom-centre of the alpha bbox (alpha > 0.02); identical pixel in every cell",
+  "cell_px_origin": "top-left of the cell",
+  "uv_origin": "bottom-left (Blender UV): u = x/width, v = 1 - y/height",
+  "note": "source canvases have different bottom padding (up to 46 px) and the maid canvas is 1.2x larger; cells are aligned on the feet anchor so expression cuts never shift the ground contact point",
+  "mesh_uv": "card mesh UV is plain 0..1; feet at mesh uv (0.500000, 0.004451)"
+ },
+ "mapping": {
+  "description": "Texture Coordinate.UV -> Mapping(scale, location) -> Image Texture(extension=CLIP). scale/location are per expression (hard-cut them with CONSTANT interpolation).",
+  "formula": "atlas_uv = mesh_uv * scale + location",
+  "feet_uv_mesh": [
+   0.5,
+   0.00445104
+  ],
+  "per_expression": {
+   "angry": {
+    "scale": [
+     0.33333333,
+     0.33333333
+    ],
+    "location": [
+     0.0,
+     0.66666667
+    ],
+    "anchor_uv": [
+     0.16666667,
+     0.66815035
+    ],
+    "scale_ref_px": 1653.0
+   },
+   "cheerful": {
+    "scale": [
+     0.33333333,
+     0.33333333
+    ],
+    "location": [
+     0.33333333,
+     0.66666667
+    ],
+    "anchor_uv": [
+     0.5,
+     0.66815035
+    ],
+    "scale_ref_px": 1653.0
+   },
+   "confused": {
+    "scale": [
+     0.33333333,
+     0.33333333
+    ],
+    "location": [
+     0.66666667,
+     0.66666667
+    ],
+    "anchor_uv": [
+     0.83333333,
+     0.66815035
+    ],
+    "scale_ref_px": 1653.0
+   },
+   "exasperated": {
+    "scale": [
+     0.33333333,
+     0.33333333
+    ],
+    "location": [
+     0.0,
+     0.33333333
+    ],
+    "anchor_uv": [
+     0.16666667,
+     0.33481701
+    ],
+    "scale_ref_px": 1653.0
+   },
+   "frightened": {
+    "scale": [
+     0.33333333,
+     0.33333333
+    ],
+    "location": [
+     0.33333333,
+     0.33333333
+    ],
+    "anchor_uv": [
+     0.5,
+     0.33481701
+    ],
+    "scale_ref_px": 1653.0
+   },
+   "serious": {
+    "scale": [
+     0.33333333,
+     0.33333333
+    ],
+    "location": [
+     0.66666667,
+     0.33333333
+    ],
+    "anchor_uv": [
+     0.83333333,
+     0.33481701
+    ],
+    "scale_ref_px": 1653.0
+   },
+   "shy": {
+    "scale": [
+     0.33333333,
+     0.33333333
+    ],
+    "location": [
+     0.0,
+     -0.0
+    ],
+    "anchor_uv": [
+     0.16666667,
+     0.00148368
+    ],
+    "scale_ref_px": 1653.0
+   },
+   "starry": {
+    "scale": [
+     0.33333333,
+     0.33333333
+    ],
+    "location": [
+     0.33333333,
+     -0.0
+    ],
+    "anchor_uv": [
+     0.5,
+     0.00148368
+    ],
+    "scale_ref_px": 1653.0
+   },
+   "maid": {
+    "scale": [
+     0.40451704,
+     0.40451704
+    ],
+    "location": [
+     0.63107481,
+     -0.00031684
+    ],
+    "anchor_uv": [
+     0.83333333,
+     0.00148368
+    ],
+    "scale_ref_px": 2006.0
+   }
+  }
+ },
+ "order": [
+  "angry",
+  "cheerful",
+  "confused",
+  "exasperated",
+  "frightened",
+  "serious",
+  "shy",
+  "starry",
+  "maid"
+ ],
+ "expressions": {
+  "angry": {
+   "cell": [
+    0,
+    0
+   ],
+   "index": 0,
+   "rect_px": [
+    0,
+    0,
+    1124,
+    2022
+   ],
+   "rect_uv": [
+    0.0,
+    0.666667,
+    0.333333,
+    1.0
+   ],
+   "alpha_bbox_in_cell_px": [
+    102,
+    355,
+    1021,
+    2013
+   ],
+   "content_size_px": [
+    920,
+    1659
+   ],
+   "feet_anchor_px_in_cell": [
+    561.5,
+    2013.0
+   ],
+   "feet_anchor_px_atlas": [
+    561.5,
+    2013.0
+   ],
+   "feet_anchor_uv": [
+    0.166518,
+    0.66815
+   ],
+   "head_anchor_px_in_cell": [
+    560.83,
+    550.0
+   ],
+   "head_anchor_px_atlas": [
+    560.83,
+    550.0
+   ],
+   "head_anchor_uv": [
+    0.166319,
+    0.909331
+   ],
+   "face_anchor_px_in_cell": [
+    559.47,
+    765.91
+   ],
+   "face_anchor_px_atlas": [
+    559.47,
+    765.91
+   ],
+   "face_anchor_uv": [
+    0.165918,
+    0.873736
+   ],
+   "face_anchor_detected": true,
+   "mapping": {
+    "scale": [
+     0.33333333,
+     0.33333333
+    ],
+    "location": [
+     0.0,
+     0.66666667
+    ],
+    "anchor_uv": [
+     0.16666667,
+     0.66815035
+    ],
+    "scale_ref_px": 1653.0
+   },
+   "source": "mv/ref/art/galgame/whale-angry.webp"
+  },
+  "cheerful": {
+   "cell": [
+    1,
+    0
+   ],
+   "index": 1,
+   "rect_px": [
+    1124,
+    0,
+    2248,
+    2022
+   ],
+   "rect_uv": [
+    0.333333,
+    0.666667,
+    0.666667,
+    1.0
+   ],
+   "alpha_bbox_in_cell_px": [
+    100,
+    377,
+    1024,
+    2013
+   ],
+   "content_size_px": [
+    925,
+    1637
+   ],
+   "feet_anchor_px_in_cell": [
+    562.0,
+    2013.0
+   ],
+   "feet_anchor_px_atlas": [
+    1686.0,
+    2013.0
+   ],
+   "feet_anchor_uv": [
+    0.5,
+    0.66815
+   ],
+   "head_anchor_px_in_cell": [
+    552.01,
+    561.74
+   ],
+   "head_anchor_px_atlas": [
+    1676.01,
+    561.74
+   ],
+   "head_anchor_uv": [
+    0.497038,
+    0.907395
+   ],
+   "face_anchor_px_in_cell": [
+    509.62,
+    678.65
+   ],
+   "face_anchor_px_atlas": [
+    1633.62,
+    678.65
+   ],
+   "face_anchor_uv": [
+    0.484466,
+    0.888122
+   ],
+   "face_anchor_detected": true,
+   "mapping": {
+    "scale": [
+     0.33333333,
+     0.33333333
+    ],
+    "location": [
+     0.33333333,
+     0.66666667
+    ],
+    "anchor_uv": [
+     0.5,
+     0.66815035
+    ],
+    "scale_ref_px": 1653.0
+   },
+   "source": "mv/ref/art/galgame/whale-cheerful.webp"
+  },
+  "confused": {
+   "cell": [
+    2,
+    0
+   ],
+   "index": 2,
+   "rect_px": [
+    2248,
+    0,
+    3372,
+    2022
+   ],
+   "rect_uv": [
+    0.666667,
+    0.666667,
+    1.0,
+    1.0
+   ],
+   "alpha_bbox_in_cell_px": [
+    126,
+    349,
+    999,
+    2013
+   ],
+   "content_size_px": [
+    874,
+    1665
+   ],
+   "feet_anchor_px_in_cell": [
+    562.5,
+    2013.0
+   ],
+   "feet_anchor_px_atlas": [
+    2810.5,
+    2013.0
+   ],
+   "feet_anchor_uv": [
+    0.833482,
+    0.66815
+   ],
+   "head_anchor_px_in_cell": [
+    550.68,
+    526.23
+   ],
+   "head_anchor_px_atlas": [
+    2798.68,
+    526.23
+   ],
+   "head_anchor_uv": [
+    0.829976,
+    0.913249
+   ],
+   "face_anchor_px_in_cell": [
+    558.61,
+    690.08
+   ],
+   "face_anchor_px_atlas": [
+    2806.61,
+    690.08
+   ],
+   "face_anchor_uv": [
+    0.832329,
+    0.886238
+   ],
+   "face_anchor_detected": true,
+   "mapping": {
+    "scale": [
+     0.33333333,
+     0.33333333
+    ],
+    "location": [
+     0.66666667,
+     0.66666667
+    ],
+    "anchor_uv": [
+     0.83333333,
+     0.66815035
+    ],
+    "scale_ref_px": 1653.0
+   },
+   "source": "mv/ref/art/galgame/whale-confused.webp"
+  },
+  "exasperated": {
+   "cell": [
+    0,
+    1
+   ],
+   "index": 3,
+   "rect_px": [
+    0,
+    2022,
+    1124,
+    4044
+   ],
+   "rect_uv": [
+    0.0,
+    0.333333,
+    0.333333,
+    0.666667
+   ],
+   "alpha_bbox_in_cell_px": [
+    116,
+    352,
+    1009,
+    2013
+   ],
+   "content_size_px": [
+    894,
+    1662
+   ],
+   "feet_anchor_px_in_cell": [
+    562.5,
+    2013.0
+   ],
+   "feet_anchor_px_atlas": [
+    562.5,
+    4035.0
+   ],
+   "feet_anchor_uv": [
+    0.166815,
+    0.334817
+   ],
+   "head_anchor_px_in_cell": [
+    547.1,
+    531.62
+   ],
+   "head_anchor_px_atlas": [
+    547.1,
+    2553.62
+   ],
+   "head_anchor_uv": [
+    0.162248,
+    0.579027
+   ],
+   "face_anchor_px_in_cell": [
+    555.46,
+    628.92
+   ],
+   "face_anchor_px_atlas": [
+    555.46,
+    2650.92
+   ],
+   "face_anchor_uv": [
+    0.164727,
+    0.562987
+   ],
+   "face_anchor_detected": true,
+   "mapping": {
+    "scale": [
+     0.33333333,
+     0.33333333
+    ],
+    "location": [
+     0.0,
+     0.33333333
+    ],
+    "anchor_uv": [
+     0.16666667,
+     0.33481701
+    ],
+    "scale_ref_px": 1653.0
+   },
+   "source": "mv/ref/art/galgame/whale-exasperated.webp"
+  },
+  "frightened": {
+   "cell": [
+    1,
+    1
+   ],
+   "index": 4,
+   "rect_px": [
+    1124,
+    2022,
+    2248,
+    4044
+   ],
+   "rect_uv": [
+    0.333333,
+    0.333333,
+    0.666667,
+    0.666667
+   ],
+   "alpha_bbox_in_cell_px": [
+    104,
+    398,
+    1021,
+    2013
+   ],
+   "content_size_px": [
+    918,
+    1616
+   ],
+   "feet_anchor_px_in_cell": [
+    562.5,
+    2013.0
+   ],
+   "feet_anchor_px_atlas": [
+    1686.5,
+    4035.0
+   ],
+   "feet_anchor_uv": [
+    0.500148,
+    0.334817
+   ],
+   "head_anchor_px_in_cell": [
+    559.28,
+    574.04
+   ],
+   "head_anchor_px_atlas": [
+    1683.28,
+    2596.04
+   ],
+   "head_anchor_uv": [
+    0.499195,
+    0.572035
+   ],
+   "face_anchor_px_in_cell": [
+    565.48,
+    746.88
+   ],
+   "face_anchor_px_atlas": [
+    1689.48,
+    2768.88
+   ],
+   "face_anchor_uv": [
+    0.501031,
+    0.543541
+   ],
+   "face_anchor_detected": true,
+   "mapping": {
+    "scale": [
+     0.33333333,
+     0.33333333
+    ],
+    "location": [
+     0.33333333,
+     0.33333333
+    ],
+    "anchor_uv": [
+     0.5,
+     0.33481701
+    ],
+    "scale_ref_px": 1653.0
+   },
+   "source": "mv/ref/art/galgame/whale-frightened.webp"
+  },
+  "serious": {
+   "cell": [
+    2,
+    1
+   ],
+   "index": 5,
+   "rect_px": [
+    2248,
+    2022,
+    3372,
+    4044
+   ],
+   "rect_uv": [
+    0.666667,
+    0.333333,
+    1.0,
+    0.666667
+   ],
+   "alpha_bbox_in_cell_px": [
+    136,
+    361,
+    987,
+    2013
+   ],
+   "content_size_px": [
+    852,
+    1653
+   ],
+   "feet_anchor_px_in_cell": [
+    561.5,
+    2013.0
+   ],
+   "feet_anchor_px_atlas": [
+    2809.5,
+    4035.0
+   ],
+   "feet_anchor_uv": [
+    0.833185,
+    0.334817
+   ],
+   "head_anchor_px_in_cell": [
+    553.69,
+    540.68
+   ],
+   "head_anchor_px_atlas": [
+    2801.69,
+    2562.68
+   ],
+   "head_anchor_uv": [
+    0.830869,
+    0.577534
+   ],
+   "face_anchor_px_in_cell": [
+    587.29,
+    648.58
+   ],
+   "face_anchor_px_atlas": [
+    2835.29,
+    2670.58
+   ],
+   "face_anchor_uv": [
+    0.840832,
+    0.559746
+   ],
+   "face_anchor_detected": true,
+   "mapping": {
+    "scale": [
+     0.33333333,
+     0.33333333
+    ],
+    "location": [
+     0.66666667,
+     0.33333333
+    ],
+    "anchor_uv": [
+     0.83333333,
+     0.33481701
+    ],
+    "scale_ref_px": 1653.0
+   },
+   "source": "mv/ref/art/galgame/whale-serious.webp"
+  },
+  "shy": {
+   "cell": [
+    0,
+    2
+   ],
+   "index": 6,
+   "rect_px": [
+    0,
+    4044,
+    1124,
+    6066
+   ],
+   "rect_uv": [
+    0.0,
+    0.0,
+    0.333333,
+    0.333333
+   ],
+   "alpha_bbox_in_cell_px": [
+    114,
+    364,
+    1010,
+    2013
+   ],
+   "content_size_px": [
+    897,
+    1650
+   ],
+   "feet_anchor_px_in_cell": [
+    562.0,
+    2013.0
+   ],
+   "feet_anchor_px_atlas": [
+    562.0,
+    6057.0
+   ],
+   "feet_anchor_uv": [
+    0.166667,
+    0.001484
+   ],
+   "head_anchor_px_in_cell": [
+    554.32,
+    542.1
+   ],
+   "head_anchor_px_atlas": [
+    554.32,
+    4586.1
+   ],
+   "head_anchor_uv": [
+    0.164388,
+    0.243967
+   ],
+   "face_anchor_px_in_cell": [
+    557.66,
+    687.94
+   ],
+   "face_anchor_px_atlas": [
+    557.66,
+    4731.94
+   ],
+   "face_anchor_uv": [
+    0.16538,
+    0.219924
+   ],
+   "face_anchor_detected": true,
+   "mapping": {
+    "scale": [
+     0.33333333,
+     0.33333333
+    ],
+    "location": [
+     0.0,
+     -0.0
+    ],
+    "anchor_uv": [
+     0.16666667,
+     0.00148368
+    ],
+    "scale_ref_px": 1653.0
+   },
+   "source": "mv/ref/art/galgame/whale-shy.webp"
+  },
+  "starry": {
+   "cell": [
+    1,
+    2
+   ],
+   "index": 7,
+   "rect_px": [
+    1124,
+    4044,
+    2248,
+    6066
+   ],
+   "rect_uv": [
+    0.333333,
+    0.0,
+    0.666667,
+    0.333333
+   ],
+   "alpha_bbox_in_cell_px": [
+    104,
+    332,
+    1019,
+    2013
+   ],
+   "content_size_px": [
+    916,
+    1682
+   ],
+   "feet_anchor_px_in_cell": [
+    561.5,
+    2013.0
+   ],
+   "feet_anchor_px_atlas": [
+    1685.5,
+    6057.0
+   ],
+   "feet_anchor_uv": [
+    0.499852,
+    0.001484
+   ],
+   "head_anchor_px_in_cell": [
+    559.86,
+    520.93
+   ],
+   "head_anchor_px_atlas": [
+    1683.86,
+    4564.93
+   ],
+   "head_anchor_uv": [
+    0.499365,
+    0.247456
+   ],
+   "face_anchor_px_in_cell": [
+    553.62,
+    573.86
+   ],
+   "face_anchor_px_atlas": [
+    1677.62,
+    4617.86
+   ],
+   "face_anchor_uv": [
+    0.497516,
+    0.238731
+   ],
+   "face_anchor_detected": true,
+   "mapping": {
+    "scale": [
+     0.33333333,
+     0.33333333
+    ],
+    "location": [
+     0.33333333,
+     -0.0
+    ],
+    "anchor_uv": [
+     0.5,
+     0.00148368
+    ],
+    "scale_ref_px": 1653.0
+   },
+   "source": "mv/ref/art/galgame/whale-starry.webp"
+  }
+ },
+ "extras": {
+  "maid": {
+   "cell": [
+    2,
+    2
+   ],
+   "index": 8,
+   "rect_px": [
+    2248,
+    4044,
+    3372,
+    6066
+   ],
+   "rect_uv": [
+    0.666667,
+    0.0,
+    1.0,
+    0.333333
+   ],
+   "alpha_bbox_in_cell_px": [
+    8,
+    8,
+    1115,
+    2013
+   ],
+   "content_size_px": [
+    1108,
+    2006
+   ],
+   "feet_anchor_px_in_cell": [
+    561.5,
+    2013.0
+   ],
+   "feet_anchor_px_atlas": [
+    2809.5,
+    6057.0
+   ],
+   "feet_anchor_uv": [
+    0.833185,
+    0.001484
+   ],
+   "head_anchor_px_in_cell": [
+    542.42,
+    223.85
+   ],
+   "head_anchor_px_atlas": [
+    2790.42,
+    4267.85
+   ],
+   "head_anchor_uv": [
+    0.827527,
+    0.296431
+   ],
+   "face_anchor_px_in_cell": [
+    577.82,
+    457.21
+   ],
+   "face_anchor_px_atlas": [
+    2825.82,
+    4501.21
+   ],
+   "face_anchor_uv": [
+    0.838024,
+    0.257961
+   ],
+   "face_anchor_detected": true,
+   "mapping": {
+    "scale": [
+     0.40451704,
+     0.40451704
+    ],
+    "location": [
+     0.63107481,
+     -0.00031684
+    ],
+    "anchor_uv": [
+     0.83333333,
+     0.00148368
+    ],
+    "scale_ref_px": 2006.0
+   },
+   "source": "mv/ref/art/galgame/maid-left.webp"
+  }
+ }
+}

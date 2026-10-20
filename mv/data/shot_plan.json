@@ -1,0 +1,25 @@
+{
+  "fps": 60,
+  "width": 1920,
+  "height": 1080,
+  "samples": 10,
+  "total_frames": 17721,
+  "note": "15 continuous shots. Each shot module renders local frames 1..N (N = round(t1*60)-round(t0*60)). Concat in order = exact song length 295.35s.",
+  "shots": [
+    {"id": "s01", "t0": 0.0,    "t1": 6.0,    "frames": 360,  "owner": "lead",         "set": "void_page",   "stage": "00 OFFLINE", "desc": "memory index page floats in the dark, cursor blinks, slow push"},
+    {"id": "s02", "t0": 6.0,    "t1": 14.36,  "frames": 502,  "owner": "lead",         "set": "dive",        "stage": "00 OFFLINE", "desc": "camera falls through fog past lanterns/threads onto the paper stage; a blank sheet sinks past lens"},
+    {"id": "s03", "t0": 14.36,  "t1": 28.32,  "frames": 837,  "owner": "lead",         "set": "bubble_shaft","stage": "01 SORT",    "desc": "she rises through bubbles holding memory photos; low 28mm track up; starry->cheerful->serious"},
+    {"id": "s04", "t0": 28.32,  "t1": 40.86,  "frames": 753,  "owner": "lead",         "set": "theater",     "stage": "01 SORT",    "desc": "she lifts a bubble into the past drawer / jar; half orbit 35mm; shy->serious->cheerful"},
+    {"id": "s05", "t0": 40.86,  "t1": 68.17,  "frames": 1638, "owner": "specimen-lab","set": "hall",        "stage": "02 RECALL",  "desc": "museum hall: table specimen scanned under a cold shaft, then eggplant; her reactions confused/sad/serious then exasperated/cheerful/confused"},
+    {"id": "s06", "t0": 68.17,  "t1": 82.89,  "frames": 883,  "owner": "lead",         "set": "archive_rise","stage": "03 ROUTE",   "desc": "\"I'm searching\" interlude: vertical rise through the archive shaft, koinobori kites appear far above, memory % dropping"},
+    {"id": "s07", "t0": 82.89,  "t1": 109.72, "frames": 1610, "owner": "specimen-lab","set": "hall",        "stage": "03 ROUTE",   "desc": "hall: cat hologram (starry/frightened/confused) then steak (hungry/serious/cheerful)"},
+    {"id": "s08", "t0": 109.72, "t1": 137.09, "frames": 1642, "owner": "specimen-lab","set": "hall",        "stage": "04 FORGET",  "desc": "hall: flower then human hologram; she reaches for the human, her hand passes through the scan"},
+    {"id": "s09", "t0": 137.09, "t1": 151.84, "frames": 885,  "owner": "lead",         "set": "void_dark",   "stage": "04 FORGET",  "desc": "\"I'm searching\" in the dark: she is alone, only a cold rim; paper dust"},
+    {"id": "s10", "t0": 151.84, "t1": 179.47, "frames": 1658, "owner": "char-lab",     "set": "typewriter",  "stage": "04 FORGET",  "desc": "forget section: typewriter page, words miss / dope->love, she types over her own memory"},
+    {"id": "s11", "t0": 179.47, "t1": 207.14, "frames": 1660, "owner": "lead",         "set": "storm",       "stage": "05 EVERYWHERE","desc": "chorus storm: paper shards + koinobori fly, she stands in the gale"},
+    {"id": "s12", "t0": 207.14, "t1": 233.77, "frames": 1598, "owner": "lead",         "set": "merge",       "stage": "06 MERGE",   "desc": "bridge: bucket of love, shredding paper, shards merge into the paper whale"},
+    {"id": "s13", "t0": 233.77, "t1": 261.06, "frames": 1638, "owner": "char-lab",     "set": "warm",        "stage": "07 RESURFACE","desc": "warm paper sky, the whale swims through drifting sheets; memory: merged"},
+    {"id": "s14", "t0": 261.06, "t1": 275.75, "frames": 881,  "owner": "char-lab",     "set": "ascent",      "stage": "07 RESURFACE","desc": "ascent toward the water surface, god rays, koinobori"},
+    {"id": "s15", "t0": 275.75, "t1": 295.35, "frames": 1176, "owner": "char-lab",     "set": "dawn",        "stage": "08 RESTORE","desc": "dawn surface: paper dog / puppy / tomato, the question comes back, memory: ?"}
+  ]
+}

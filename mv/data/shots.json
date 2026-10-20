@@ -1,0 +1,684 @@
+{
+ "fps": 60,
+ "width": 1920,
+ "height": 1080,
+ "samples": 10,
+ "shots": [
+  {
+   "id": "s01",
+   "name": "typing",
+   "t0": 0.0,
+   "t1": 6.0,
+   "section": "PROLOGUE",
+   "stage": "00 OFFLINE",
+   "set": "void_ink",
+   "camera": "macro static, slow push 4%",
+   "char": [],
+   "hud": [
+    "title_fade_in"
+   ],
+   "fx": [
+    "paper_fiber",
+    "dust"
+   ],
+   "notes": "terminal lines typed on near-black; cursor blink",
+   "dur": 6.0,
+   "frames": 360
+  },
+  {
+   "id": "s02",
+   "name": "sinking",
+   "t0": 6.0,
+   "t1": 10.0,
+   "section": "PROLOGUE",
+   "stage": "00 OFFLINE",
+   "set": "archive",
+   "camera": "45deg dive, wide 24mm, fall past shelves",
+   "char": [],
+   "hud": [],
+   "fx": [
+    "shelf_fog",
+    "paper_drift",
+    "index_sheet"
+   ],
+   "notes": "giant index sheet floats by; title card world.",
+   "dur": 4.0,
+   "frames": 240
+  },
+  {
+   "id": "s03",
+   "name": "sheet",
+   "t0": 10.0,
+   "t1": 14.36,
+   "section": "PROLOGUE",
+   "stage": "00 OFFLINE",
+   "set": "void_water",
+   "camera": "medium, slow push",
+   "char": [
+    [
+     "confused",
+     10.0,
+     13.1
+    ],
+    [
+     "serious",
+     13.1,
+     14.36
+    ]
+   ],
+   "hud": [
+    "title_card"
+   ],
+   "fx": [
+    "bubbles",
+    "blank_sheet"
+   ],
+   "notes": "she steps out of the drawing; sheet falls blank",
+   "dur": 4.36,
+   "frames": 262
+  },
+  {
+   "id": "s04",
+   "name": "bubbles",
+   "t0": 14.36,
+   "t1": 28.32,
+   "section": "SORT",
+   "stage": "01 SORT",
+   "set": "bubble_shaft",
+   "camera": "track up with char, 28mm",
+   "char": [
+    [
+     "starry",
+     14.36,
+     18.4
+    ],
+    [
+     "cheerful",
+     18.4,
+     24.0
+    ],
+    [
+     "serious",
+     24.0,
+     28.32
+    ]
+   ],
+   "hud": [
+    "memory_her89",
+    "lyric"
+   ],
+   "fx": [
+    "bubbles_photos",
+    "pop_on_beat"
+   ],
+   "notes": "lyric 0-1",
+   "dur": 13.96,
+   "frames": 837
+  },
+  {
+   "id": "s05",
+   "name": "memory",
+   "t0": 28.32,
+   "t1": 40.86,
+   "section": "SORT",
+   "stage": "01 SORT",
+   "set": "bubble_shaft",
+   "camera": "orbit half circle, 35mm",
+   "char": [
+    [
+     "shy",
+     28.32,
+     33.0
+    ],
+    [
+     "serious",
+     33.0,
+     36.5
+    ],
+    [
+     "cheerful",
+     36.5,
+     40.86
+    ]
+   ],
+   "hud": [
+    "memory_her89",
+    "lyric",
+    "log_insert"
+   ],
+   "fx": [
+    "glass_jar",
+    "drawer_past"
+   ],
+   "notes": "lyric 2-3; insert bubble into past drawer; save sweetest in jar",
+   "dur": 12.54,
+   "frames": 753
+  },
+  {
+   "id": "s06",
+   "name": "table",
+   "t0": 40.86,
+   "t1": 54.46,
+   "section": "RECALL",
+   "stage": "02 RECALL",
+   "set": "hall_spot",
+   "camera": "wide 24mm -> medium 50mm",
+   "char": [
+    [
+     "confused",
+     40.86,
+     46.0
+    ],
+    [
+     "sad",
+     46.0,
+     50.0
+    ],
+    [
+     "serious",
+     50.0,
+     54.46
+    ]
+   ],
+   "hud": [
+    "memory_her89",
+    "label_table",
+    "lyric",
+    "log_sim031"
+   ],
+   "fx": [
+    "scan_lines",
+    "spot_cone"
+   ],
+   "notes": "lyric 4-7",
+   "dur": 13.6,
+   "frames": 816
+  },
+  {
+   "id": "s07",
+   "name": "eggplant",
+   "t0": 54.46,
+   "t1": 68.17,
+   "section": "RECALL",
+   "stage": "02 RECALL",
+   "set": "hall_spot",
+   "camera": "low angle 35mm",
+   "char": [
+    [
+     "exasperated",
+     54.46,
+     58.0
+    ],
+    [
+     "cheerful",
+     58.0,
+     63.0
+    ],
+    [
+     "confused",
+     63.0,
+     68.17
+    ]
+   ],
+   "hud": [
+    "memory_her80",
+    "label_eggplant",
+    "lyric"
+   ],
+   "fx": [
+    "scratch_glow",
+    "scan_lines"
+   ],
+   "notes": "lyric 8-11",
+   "dur": 13.71,
+   "frames": 822
+  },
+  {
+   "id": "s08",
+   "name": "search_a",
+   "t0": 68.17,
+   "t1": 82.89,
+   "section": "SEARCH-A",
+   "stage": "03 ROUTE",
+   "set": "archive_shaft",
+   "camera": "vertical rise, wide",
+   "char": [
+    [
+     "serious",
+     68.17,
+     82.89
+    ]
+   ],
+   "hud": [
+    "memory_her80",
+    "stage_route",
+    "lyric_imsearching"
+   ],
+   "fx": [
+    "koinobori_far",
+    "god_rays"
+   ],
+   "notes": "interlude; kites first appear; memory dropping",
+   "dur": 14.72,
+   "frames": 883
+  },
+  {
+   "id": "s09",
+   "name": "cat",
+   "t0": 82.89,
+   "t1": 96.64,
+   "section": "ROUTE",
+   "stage": "03 ROUTE",
+   "set": "hall_spot",
+   "camera": "medium close, 50mm",
+   "char": [
+    [
+     "starry",
+     82.89,
+     87.0
+    ],
+    [
+     "frightened",
+     87.0,
+     92.0
+    ],
+    [
+     "confused",
+     92.0,
+     96.64
+    ]
+   ],
+   "hud": [
+    "memory_her73",
+    "label_cat",
+    "lyric"
+   ],
+   "fx": [
+    "wireframe_cat",
+    "hiss_glyphs",
+    "purr_zero"
+   ],
+   "notes": "lyric 13-19",
+   "dur": 13.75,
+   "frames": 825
+  },
+  {
+   "id": "s10",
+   "name": "steak",
+   "t0": 96.64,
+   "t1": 109.72,
+   "section": "ROUTE",
+   "stage": "03 ROUTE",
+   "set": "hall_spot",
+   "camera": "macro 55mm",
+   "char": [
+    [
+     "starry",
+     96.64,
+     103.0
+    ],
+    [
+     "cheerful",
+     103.0,
+     109.72
+    ]
+   ],
+   "hud": [
+    "memory_her67",
+    "label_steak",
+    "lyric"
+   ],
+   "fx": [
+    "mushroom_sauce",
+    "paper_bite"
+   ],
+   "notes": "lyric 20-23",
+   "dur": 13.08,
+   "frames": 785
+  },
+  {
+   "id": "s11",
+   "name": "flower",
+   "t0": 109.72,
+   "t1": 123.44,
+   "section": "ROUTE",
+   "stage": "03 ROUTE",
+   "set": "hall_spot",
+   "camera": "close, slow push",
+   "char": [
+    [
+     "shy",
+     109.72,
+     115.0
+    ],
+    [
+     "cheerful",
+     115.0,
+     123.44
+    ]
+   ],
+   "hud": [
+    "memory_her67",
+    "label_flower",
+    "lyric"
+   ],
+   "fx": [
+    "petal_beat",
+    "warm_bloom"
+   ],
+   "notes": "lyric 24-27",
+   "dur": 13.72,
+   "frames": 823
+  },
+  {
+   "id": "s12",
+   "name": "human",
+   "t0": 123.44,
+   "t1": 137.09,
+   "section": "ROUTE",
+   "stage": "03 ROUTE",
+   "set": "light_human",
+   "camera": "side long lens 85mm",
+   "char": [
+    [
+     "frightened",
+     123.44,
+     129.0
+    ],
+    [
+     "shy",
+     129.0,
+     133.0
+    ],
+    [
+     "sad",
+     133.0,
+     137.09
+    ]
+   ],
+   "hud": [
+    "memory_her67",
+    "label_human",
+    "lyric"
+   ],
+   "fx": [
+    "light_hand",
+    "edge_on_hand",
+    "warm_bleed"
+   ],
+   "notes": "lyric 28-31",
+   "dur": 13.65,
+   "frames": 819
+  },
+  {
+   "id": "s13",
+   "name": "void",
+   "t0": 137.09,
+   "t1": 151.84,
+   "section": "SEARCH-B",
+   "stage": "03 ROUTE",
+   "set": "void_dark",
+   "camera": "static wide, drift",
+   "char": [
+    [
+     "serious",
+     137.09,
+     144.0
+    ],
+    [
+     "sad",
+     144.0,
+     151.84
+    ]
+   ],
+   "hud": [
+    "memory_her24",
+    "lyric_imsearching",
+    "log_peer_overwrite"
+   ],
+   "fx": [
+    "kites_pass",
+    "paper_crack"
+   ],
+   "notes": "interlude; memory collapses",
+   "dur": 14.75,
+   "frames": 885
+  },
+  {
+   "id": "s14",
+   "name": "forget",
+   "t0": 151.84,
+   "t1": 168.0,
+   "section": "FORGET",
+   "stage": "04 FORGET",
+   "set": "typewriter_page",
+   "camera": "frontal flat, 35mm",
+   "char": [
+    [
+     "exasperated",
+     151.84,
+     158.0
+    ],
+    [
+     "frightened",
+     158.0,
+     168.0
+    ]
+   ],
+   "hud": [
+    "memory_her28",
+    "lyric",
+    "typewriter"
+   ],
+   "fx": [
+    "falling_letters",
+    "wrong_word"
+   ],
+   "notes": "lyric 32-37",
+   "dur": 16.16,
+   "frames": 970
+  },
+  {
+   "id": "s15",
+   "name": "love",
+   "t0": 168.0,
+   "t1": 179.47,
+   "section": "FORGET",
+   "stage": "04 FORGET",
+   "set": "typewriter_page",
+   "camera": "close, sinking",
+   "char": [
+    [
+     "sad",
+     168.0,
+     179.47
+    ]
+   ],
+   "hud": [
+    "memory_her32",
+    "lyric",
+    "logit_dope_love"
+   ],
+   "fx": [
+    "torn_photo",
+    "sink"
+   ],
+   "notes": "lyric 38-42",
+   "dur": 11.47,
+   "frames": 688
+  },
+  {
+   "id": "s16",
+   "name": "everywhere",
+   "t0": 179.47,
+   "t1": 207.14,
+   "section": "EVERYWHERE",
+   "stage": "05 EVERYWHERE",
+   "set": "storm",
+   "camera": "6 jump cuts on downbeats",
+   "char": [
+    [
+     "starry",
+     179.47,
+     186.0
+    ],
+    [
+     "cheerful",
+     186.0,
+     193.0
+    ],
+    [
+     "frightened",
+     193.0,
+     200.0
+    ],
+    [
+     "sad",
+     200.0,
+     207.14
+    ]
+   ],
+   "hud": [
+    "memory_her15",
+    "lyric",
+    "label_spam"
+   ],
+   "fx": [
+    "kaleidoscope",
+    "blank_sheet_drift"
+   ],
+   "notes": "lyric 43-49",
+   "dur": 27.67,
+   "frames": 1660
+  },
+  {
+   "id": "s17",
+   "name": "bucket",
+   "t0": 207.14,
+   "t1": 221.18,
+   "section": "MERGE",
+   "stage": "06 MERGE",
+   "set": "merge_ring",
+   "camera": "orbit wide",
+   "char": [
+    [
+     "serious",
+     207.14,
+     214.0
+    ],
+    [
+     "sad",
+     214.0,
+     221.18
+    ]
+   ],
+   "hud": [
+    "memory_merged",
+    "lyric",
+    "peer_labels"
+   ],
+   "fx": [
+    "kites_ring",
+    "buckets_light"
+   ],
+   "notes": "lyric 50-51",
+   "dur": 14.04,
+   "frames": 843
+  },
+  {
+   "id": "s18",
+   "name": "shred",
+   "t0": 221.18,
+   "t1": 233.77,
+   "section": "MERGE",
+   "stage": "06 MERGE",
+   "set": "vortex",
+   "camera": "spiral in -> low angle up",
+   "char": [],
+   "hud": [
+    "memory_merged",
+    "lyric",
+    "cut_counter"
+   ],
+   "fx": [
+    "paper_shred",
+    "whale_form",
+    "iridescent"
+   ],
+   "notes": "lyric 52-53; only volume form of the film",
+   "dur": 12.59,
+   "frames": 755
+  },
+  {
+   "id": "s19",
+   "name": "resurface",
+   "t0": 233.77,
+   "t1": 261.06,
+   "section": "RESURFACE",
+   "stage": "07 RESURFACE",
+   "set": "warm_hall",
+   "camera": "long take: flower -> human -> wide",
+   "char": [],
+   "hud": [
+    "memory_merged",
+    "lyric"
+   ],
+   "fx": [
+    "giant_bloom",
+    "embrace_ok",
+    "paint_bleed"
+   ],
+   "notes": "lyric 54-57",
+   "dur": 27.29,
+   "frames": 1638
+  },
+  {
+   "id": "s20",
+   "name": "ascent",
+   "t0": 261.06,
+   "t1": 275.75,
+   "section": "ASCENT",
+   "stage": "07 RESURFACE",
+   "set": "ascent",
+   "camera": "vertical rise following whale",
+   "char": [],
+   "hud": [
+    "lyric_imsearching",
+    "restore"
+   ],
+   "fx": [
+    "archive_melt",
+    "petals"
+   ],
+   "notes": "interlude",
+   "dur": 14.69,
+   "frames": 881
+  },
+  {
+   "id": "s21",
+   "name": "restore",
+   "t0": 275.75,
+   "t1": 295.347,
+   "section": "RESTORE",
+   "stage": "08 RESTORE",
+   "set": "dawn_surface",
+   "camera": "wide -> eye level close",
+   "char": [],
+   "hud": [
+    "lyric",
+    "result_you",
+    "endcard"
+   ],
+   "fx": [
+    "tomato",
+    "chibi_puppy",
+    "paint_splash",
+    "bubble"
+   ],
+   "notes": "lyric 58-66; query result at 290.8 chime; title/credits 291.2-295.3",
+   "dur": 19.597,
+   "frames": 1176
+  }
+ ],
+ "total_frames": 17721
+}

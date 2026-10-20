@@ -1,0 +1,383 @@
+[Script Info]
+Title: world.search(you); — The Museum of Approximations
+Original Script: ui-lab / hud_timeline.py
+ScriptType: v4.00+
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 2560
+PlayResY: 1440
+Timer: 100.0000
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: LyricEN,Georgia,54,&H66DEE8EC,&H66DEE8EC,&H8C000000,&H99000000,0,-1,0,0,100,100,3.2,0,1,2.6,2,5,96,96,96,1
+Style: LyricZH,Microsoft YaHei Light,31,&H80DEE8EC,&H80DEE8EC,&H8C000000,&H99000000,0,0,0,0,100,100,0.8,0,1,2.2,2,5,96,96,96,1
+Style: HudMicro,Consolas,19,&H8CDEE8EC,&H8CDEE8EC,&H8C000000,&HFF000000,0,0,0,0,100,100,7,0,1,1,0,7,96,96,96,1
+Style: HudStage,Consolas,34,&H73DEE8EC,&H73DEE8EC,&H8C000000,&HFF000000,0,0,0,0,100,100,3,0,1,1.2,0,7,96,96,96,1
+Style: HudPage,Consolas,19,&H8CDEE8EC,&H8CDEE8EC,&H8C000000,&HFF000000,0,0,0,0,100,100,4,0,1,1,0,7,96,96,96,1
+Style: HudMem,Consolas,32,&H73DEE8EC,&H73DEE8EC,&H8C000000,&HFF000000,0,0,0,0,100,100,0,0,1,1.2,0,9,96,96,96,1
+Style: HudSrc,Consolas,19,&H99DEE8EC,&H99DEE8EC,&H8C000000,&HFF000000,0,0,0,0,100,100,0.5,0,1,1,0,9,96,96,96,1
+Style: HudLog,Consolas,23,&H73DEE8EC,&H73DEE8EC,&H8C000000,&HFF000000,0,0,0,0,100,100,0,0,1,1,0,1,96,96,96,1
+Style: CardNum,Georgia,150,&H1A29201D,&H1A29201D,&H8C000000,&HFF000000,0,-1,0,0,100,100,0,0,1,0,0,4,96,96,96,1
+Style: CardName,Georgia,76,&H1A29201D,&H1A29201D,&H8C000000,&HFF000000,0,0,0,0,100,100,14,0,1,0,0,4,96,96,96,1
+Style: CardData,Consolas,21,&H5929201D,&H5929201D,&H8C000000,&HFF000000,0,0,0,0,100,100,1.2,0,1,0,0,6,96,96,96,1
+Style: SubMark,Consolas,22,&H73DEE8EC,&H73DEE8EC,&H8C000000,&HFF000000,0,0,0,0,100,100,8,0,1,1,0,5,96,96,96,1
+Style: EndMicro,Consolas,20,&H73DEE8EC,&H73DEE8EC,&H8C000000,&HFF000000,0,0,0,0,100,100,8,0,1,1,0,5,96,96,96,1
+Style: EndTitle,Georgia,112,&H1ADEE8EC,&H1ADEE8EC,&H8C000000,&HFF000000,0,-1,0,0,100,100,2,0,1,1.6,0,5,96,96,96,1
+Style: EndAlbum,Georgia,38,&H4DDEE8EC,&H4DDEE8EC,&H8C000000,&HFF000000,0,-1,0,0,100,100,1,0,1,1.2,0,5,96,96,96,1
+Style: EndCreditZH,Microsoft YaHei Light,25,&H4DDEE8EC,&H4DDEE8EC,&H8C000000,&HFF000000,0,0,0,0,100,100,0.5,0,1,1.2,0,5,96,96,96,1
+Style: EndCreditEN,Georgia,27,&H4DDEE8EC,&H4DDEE8EC,&H8C000000,&HFF000000,0,-1,0,0,100,100,0.5,0,1,1.2,0,5,96,96,96,1
+Style: EndLicense,Consolas,20,&H73DEE8EC,&H73DEE8EC,&H8C000000,&HFF000000,0,0,0,0,100,100,2,0,1,1,0,5,96,96,96,1
+Style: OpenMicro,Consolas,18,&H8C8AD2FF,&H8C8AD2FF,&H8C000000,&HFF000000,0,0,0,0,100,100,8,0,1,1,0,7,96,96,96,1
+Style: OpenTitle,Georgia,40,&H66DEE8EC,&H66DEE8EC,&H8C000000,&HFF000000,0,-1,0,0,100,100,1.4,0,1,1.2,0,7,96,96,96,1
+Style: OpenAlbum,Consolas,17,&H8CDEE8EC,&H8CDEE8EC,&H8C000000,&HFF000000,0,0,0,0,100,100,2.4,0,1,1,0,7,96,96,96,1
+Style: Draw,Consolas,20,&H0029201D,&H0029201D,&H8C000000,&HFF000000,0,0,0,0,100,100,0,0,1,0,0,7,96,96,96,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:04:51.20,0:04:55.35,Draw,END_VEIL,0,0,0,,{\an7\pos(0,0)\fad(800,400)\c&H30220A&\alpha&H66&}{\p1\bord0\shad0}m 0 0 l 2560 0 l 2560 1440 l 0 1440
+Dialogue: 1,0:00:01.00,0:00:04.40,Draw,OPEN_RULE,0,0,0,,{\an7\pos(96,1092)\fad(600,450)\c&H8AD2FF&\alpha&H73&}{\p1\bord0\shad0}m 0 0 l 64 0 l 64 2 l 0 2
+Dialogue: 1,0:00:14.46,0:00:15.66,Draw,CARD_01_SORT_FILL,0,0,0,,{\an7\pos(280,608)\fad(240,340)\c&HDEE8EC&\alpha&H66&}{\p1\bord0\shad0}m 0 0 l 2000 0 l 2000 224 l 0 224
+Dialogue: 1,0:00:40.96,0:00:42.16,Draw,CARD_02_RECALL_FILL,0,0,0,,{\an7\pos(280,608)\fad(240,340)\c&HDEE8EC&\alpha&H66&}{\p1\bord0\shad0}m 0 0 l 2000 0 l 2000 224 l 0 224
+Dialogue: 1,0:01:22.99,0:01:24.19,Draw,CARD_03_ROUTE_FILL,0,0,0,,{\an7\pos(280,608)\fad(240,340)\c&HDEE8EC&\alpha&H66&}{\p1\bord0\shad0}m 0 0 l 2000 0 l 2000 224 l 0 224
+Dialogue: 1,0:02:31.94,0:02:33.14,Draw,CARD_04_FORGET_FILL,0,0,0,,{\an7\pos(280,608)\fad(240,340)\c&HDEE8EC&\alpha&H66&}{\p1\bord0\shad0}m 0 0 l 2000 0 l 2000 224 l 0 224
+Dialogue: 1,0:02:59.57,0:03:00.77,Draw,CARD_05_EVERYWHERE_FILL,0,0,0,,{\an7\pos(280,608)\fad(240,340)\c&HDEE8EC&\alpha&H66&}{\p1\bord0\shad0}m 0 0 l 2000 0 l 2000 224 l 0 224
+Dialogue: 1,0:03:27.24,0:03:28.44,Draw,CARD_06_MERGE_FILL,0,0,0,,{\an7\pos(280,608)\fad(240,340)\c&HDEE8EC&\alpha&H66&}{\p1\bord0\shad0}m 0 0 l 2000 0 l 2000 224 l 0 224
+Dialogue: 1,0:03:53.87,0:03:55.07,Draw,CARD_07_RESURFACE_FILL,0,0,0,,{\an7\pos(280,608)\fad(240,340)\c&HDEE8EC&\alpha&H66&}{\p1\bord0\shad0}m 0 0 l 2000 0 l 2000 224 l 0 224
+Dialogue: 1,0:04:35.85,0:04:37.05,Draw,CARD_08_RESTORE_FILL,0,0,0,,{\an7\pos(280,608)\fad(240,340)\c&HDEE8EC&\alpha&H66&}{\p1\bord0\shad0}m 0 0 l 2000 0 l 2000 224 l 0 224
+Dialogue: 1,0:04:51.20,0:04:55.35,Draw,END_RULE,0,0,0,,{\an7\pos(900,640)\fad(700,400)\c&H8AD2FF&\alpha&H8C&}{\p1\bord0\shad0}m 0 0 l 760 0 l 760 2 l 0 2
+Dialogue: 2,0:00:00.45,0:00:14.36,Draw,HUD_PAGE_DASH_00,0,0,0,,{\an7\pos(212,184)\fad(600,0)\c&HFE6B4D&\alpha&H59&}{\p1\bord0\shad0}m 0 0 l 22 0 l 22 2 l 0 2
+Dialogue: 2,0:00:14.36,0:00:40.86,Draw,HUD_PAGE_DASH_01,0,0,0,,{\an7\pos(212,184)\c&HFE6B4D&\alpha&H59&}{\p1\bord0\shad0}m 0 0 l 22 0 l 22 2 l 0 2
+Dialogue: 2,0:00:14.46,0:00:15.66,Draw,CARD_01_SORT_RULE,0,0,0,,{\an7\pos(294,622)\fad(240,340)\c&H29201D&\alpha&H8C&}{\p1\bord0\shad0}m 0 0 l 1972 0 l 1972 1.5 l 0 1.5 m 0 194.5 l 1972 194.5 l 1972 196 l 0 196 m 0 0 l 1.5 0 l 1.5 196 l 0 196 m 1970.5 0 l 1972 0 l 1972 196 l 1970.5 196
+Dialogue: 2,0:00:40.86,0:01:08.17,Draw,HUD_PAGE_DASH_02,0,0,0,,{\an7\pos(212,184)\c&HFE6B4D&\alpha&H59&}{\p1\bord0\shad0}m 0 0 l 22 0 l 22 2 l 0 2
+Dialogue: 2,0:00:40.96,0:00:42.16,Draw,CARD_02_RECALL_RULE,0,0,0,,{\an7\pos(294,622)\fad(240,340)\c&H29201D&\alpha&H8C&}{\p1\bord0\shad0}m 0 0 l 1972 0 l 1972 1.5 l 0 1.5 m 0 194.5 l 1972 194.5 l 1972 196 l 0 196 m 0 0 l 1.5 0 l 1.5 196 l 0 196 m 1970.5 0 l 1972 0 l 1972 196 l 1970.5 196
+Dialogue: 2,0:01:08.17,0:01:22.89,Draw,HUD_PAGE_DASH_03,0,0,0,,{\an7\pos(212,184)\c&HFE6B4D&\alpha&H59&}{\p1\bord0\shad0}m 0 0 l 22 0 l 22 2 l 0 2
+Dialogue: 2,0:01:08.25,0:01:09.25,Draw,SUBCARD_S03_RULE,0,0,0,,{\an7\pos(1069.2,419)\fad(240,320)\c&HDEE8EC&\alpha&H8C&}{\p1\bord0\shad0}m 0 0 l 100 0 l 100 1.6 l 0 1.6 m 321.5999999999999 0 l 421.5999999999999 0 l 421.5999999999999 1.6 l 321.5999999999999 1.6
+Dialogue: 2,0:01:22.89,0:02:17.09,Draw,HUD_PAGE_DASH_04,0,0,0,,{\an7\pos(212,184)\c&HFE6B4D&\alpha&H59&}{\p1\bord0\shad0}m 0 0 l 22 0 l 22 2 l 0 2
+Dialogue: 2,0:01:22.99,0:01:24.19,Draw,CARD_03_ROUTE_RULE,0,0,0,,{\an7\pos(294,622)\fad(240,340)\c&H29201D&\alpha&H8C&}{\p1\bord0\shad0}m 0 0 l 1972 0 l 1972 1.5 l 0 1.5 m 0 194.5 l 1972 194.5 l 1972 196 l 0 196 m 0 0 l 1.5 0 l 1.5 196 l 0 196 m 1970.5 0 l 1972 0 l 1972 196 l 1970.5 196
+Dialogue: 2,0:02:17.09,0:02:31.84,Draw,HUD_PAGE_DASH_05,0,0,0,,{\an7\pos(212,184)\c&HFE6B4D&\alpha&H59&}{\p1\bord0\shad0}m 0 0 l 22 0 l 22 2 l 0 2
+Dialogue: 2,0:02:17.17,0:02:18.17,Draw,SUBCARD_S05_RULE,0,0,0,,{\an7\pos(1069.2,419)\fad(240,320)\c&HDEE8EC&\alpha&H8C&}{\p1\bord0\shad0}m 0 0 l 100 0 l 100 1.6 l 0 1.6 m 321.5999999999999 0 l 421.5999999999999 0 l 421.5999999999999 1.6 l 321.5999999999999 1.6
+Dialogue: 2,0:02:31.84,0:02:59.47,Draw,HUD_PAGE_DASH_06,0,0,0,,{\an7\pos(212,184)\c&HFE6B4D&\alpha&H59&}{\p1\bord0\shad0}m 0 0 l 22 0 l 22 2 l 0 2
+Dialogue: 2,0:02:31.94,0:02:33.14,Draw,CARD_04_FORGET_RULE,0,0,0,,{\an7\pos(294,622)\fad(240,340)\c&H29201D&\alpha&H8C&}{\p1\bord0\shad0}m 0 0 l 1972 0 l 1972 1.5 l 0 1.5 m 0 194.5 l 1972 194.5 l 1972 196 l 0 196 m 0 0 l 1.5 0 l 1.5 196 l 0 196 m 1970.5 0 l 1972 0 l 1972 196 l 1970.5 196
+Dialogue: 2,0:02:59.47,0:03:27.14,Draw,HUD_PAGE_DASH_07,0,0,0,,{\an7\pos(212,184)\c&HFE6B4D&\alpha&H59&}{\p1\bord0\shad0}m 0 0 l 22 0 l 22 2 l 0 2
+Dialogue: 2,0:02:59.57,0:03:00.77,Draw,CARD_05_EVERYWHERE_RULE,0,0,0,,{\an7\pos(294,622)\fad(240,340)\c&H29201D&\alpha&H8C&}{\p1\bord0\shad0}m 0 0 l 1972 0 l 1972 1.5 l 0 1.5 m 0 194.5 l 1972 194.5 l 1972 196 l 0 196 m 0 0 l 1.5 0 l 1.5 196 l 0 196 m 1970.5 0 l 1972 0 l 1972 196 l 1970.5 196
+Dialogue: 2,0:03:27.14,0:03:53.77,Draw,HUD_PAGE_DASH_08,0,0,0,,{\an7\pos(212,184)\c&HFE6B4D&\alpha&H59&}{\p1\bord0\shad0}m 0 0 l 22 0 l 22 2 l 0 2
+Dialogue: 2,0:03:27.24,0:03:28.44,Draw,CARD_06_MERGE_RULE,0,0,0,,{\an7\pos(294,622)\fad(240,340)\c&H29201D&\alpha&H8C&}{\p1\bord0\shad0}m 0 0 l 1972 0 l 1972 1.5 l 0 1.5 m 0 194.5 l 1972 194.5 l 1972 196 l 0 196 m 0 0 l 1.5 0 l 1.5 196 l 0 196 m 1970.5 0 l 1972 0 l 1972 196 l 1970.5 196
+Dialogue: 2,0:03:53.77,0:04:21.06,Draw,HUD_PAGE_DASH_09,0,0,0,,{\an7\pos(212,184)\c&HFE6B4D&\alpha&H59&}{\p1\bord0\shad0}m 0 0 l 22 0 l 22 2 l 0 2
+Dialogue: 2,0:03:53.87,0:03:55.07,Draw,CARD_07_RESURFACE_RULE,0,0,0,,{\an7\pos(294,622)\fad(240,340)\c&H29201D&\alpha&H8C&}{\p1\bord0\shad0}m 0 0 l 1972 0 l 1972 1.5 l 0 1.5 m 0 194.5 l 1972 194.5 l 1972 196 l 0 196 m 0 0 l 1.5 0 l 1.5 196 l 0 196 m 1970.5 0 l 1972 0 l 1972 196 l 1970.5 196
+Dialogue: 2,0:04:21.06,0:04:35.75,Draw,HUD_PAGE_DASH_10,0,0,0,,{\an7\pos(212,184)\c&HFE6B4D&\alpha&H59&}{\p1\bord0\shad0}m 0 0 l 22 0 l 22 2 l 0 2
+Dialogue: 2,0:04:21.14,0:04:22.14,Draw,SUBCARD_S10_RULE,0,0,0,,{\an7\pos(1082.4,419)\fad(240,320)\c&HDEE8EC&\alpha&H8C&}{\p1\bord0\shad0}m 0 0 l 100 0 l 100 1.6 l 0 1.6 m 295.1999999999998 0 l 395.1999999999998 0 l 395.1999999999998 1.6 l 295.1999999999998 1.6
+Dialogue: 2,0:04:35.75,0:04:50.90,Draw,HUD_PAGE_DASH_11,0,0,0,,{\an7\pos(212,184)\fad(0,280)\c&HFE6B4D&\alpha&H59&}{\p1\bord0\shad0}m 0 0 l 22 0 l 22 2 l 0 2
+Dialogue: 2,0:04:35.85,0:04:37.05,Draw,CARD_08_RESTORE_RULE,0,0,0,,{\an7\pos(294,622)\fad(240,340)\c&H29201D&\alpha&H8C&}{\p1\bord0\shad0}m 0 0 l 1972 0 l 1972 1.5 l 0 1.5 m 0 194.5 l 1972 194.5 l 1972 196 l 0 196 m 0 0 l 1.5 0 l 1.5 196 l 0 196 m 1970.5 0 l 1972 0 l 1972 196 l 1970.5 196
+Dialogue: 2,0:04:51.20,0:04:55.35,EndAlbum,END_ALBUM,0,0,0,,{\an5\pos(1280,700)\fad(700,400)}from the album Hue
+Dialogue: 2,0:04:51.20,0:04:55.35,EndCreditZH,END_CREDIT_ART,0,0,0,,{\an5\pos(1280,898)\fad(700,400)}{\fnMicrosoft YaHei Light\fs25\alpha&H4D&}角色美术：溟月 © 上善无形{\c&H8AD2FF&\alpha&H8C&}  ·  {\c&HDEE8EC&\alpha&H4D&\fnMicrosoft YaHei Light\fs25}女仆版 {\fnGeorgia\i1\fs26}ZipZipPipe{\c&H8AD2FF&\alpha&H8C&}  ·  {\c&HDEE8EC&\alpha&H4D&\fnMicrosoft YaHei Light\fs25}立绘 {\fnGeorgia\i1\fs26}Small-tailqwq{\c&H8AD2FF&\alpha&H8C&}  ·  {\c&HDEE8EC&\alpha&H4D&\fnMicrosoft YaHei Light\fs25}表情 {\fnGeorgia\i1\fs26}JAdpp
+Dialogue: 2,0:04:51.20,0:04:55.35,EndLicense,END_LICENSE,0,0,0,,{\an5\pos(1280,952)\fad(700,400)}licensed under CC BY-NC-SA 4.0
+Dialogue: 2,0:04:51.20,0:04:55.35,EndMicro,END_MICRO_ARTIST,0,0,0,,{\an5\pos(1280,452)\fad(700,400)\c&H8AD2FF&\alpha&H73&}MILI
+Dialogue: 2,0:04:51.20,0:04:55.35,EndMicro,END_MICRO_CREDIT,0,0,0,,{\an5\pos(1280,852)\fad(700,400)}CHARACTER ART
+Dialogue: 2,0:04:51.20,0:04:55.35,EndMicro,END_MICRO_FILM,0,0,0,,{\an5\pos(1280,1320)\fad(700,400)\c&HDEE8EC&\alpha&H8C&}THE MUSEUM OF APPROXIMATIONS
+Dialogue: 2,0:04:51.20,0:04:55.35,EndTitle,END_TITLE,0,0,0,,{\an5\pos(1280,560)\move(1280,572,1280,560,0,700)\fad(700,400)}world.search(you);
+Dialogue: 3,0:00:00.25,0:00:06.00,HudLog,HUD_LOG_00_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}boot dsh-v4.1-flash / cwd ~/memory/you/
+Dialogue: 3,0:00:00.45,0:00:14.36,HudPage,HUD_PAGE_00,0,0,0,,{\an7\pos(96,176)\fad(600,0)\c&HDEE8EC&\alpha&H8C&}00 / 08
+Dialogue: 3,0:00:00.45,0:00:14.36,HudPage,HUD_PAGE_NAME_00,0,0,0,,{\an7\pos(252,176)\fad(600,0)\c&HDEE8EC&\alpha&H73&}PROLOGUE
+Dialogue: 3,0:00:00.45,0:00:14.36,HudStage,HUD_STAGE_00,0,0,0,,{\an7\move(96,132,96,122,0,600)\fad(600,200)}00 OFFLINE
+Dialogue: 3,0:00:00.45,0:04:50.90,HudMicro,HUD_STAGE_MICRO,0,0,0,,{\an7\pos(96,96)\fad(600,280)}STAGE
+Dialogue: 3,0:00:01.05,0:00:04.40,OpenMicro,OPEN_MILI,0,0,0,,{\an7\pos(96,1104)\fad(550,450)}MILI
+Dialogue: 3,0:00:01.14,0:00:04.40,OpenTitle,OPEN_TITLE,0,0,0,,{\an7\pos(96,1134)\move(96,1140,96,1134,0,700)\fad(700,450)}world.search(you);
+Dialogue: 3,0:00:01.30,0:00:04.40,OpenAlbum,OPEN_ALBUM,0,0,0,,{\an7\pos(96,1194)\fad(700,450)}from the album Hue
+Dialogue: 3,0:00:06.00,0:00:14.36,HudLog,HUD_LOG_00_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}boot dsh-v4.1-flash / cwd ~/memory/you/
+Dialogue: 3,0:00:06.00,0:00:14.36,HudLog,HUD_LOG_01_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}query: world.search(you);
+Dialogue: 3,0:00:14.36,0:00:40.86,HudLog,HUD_LOG_00_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}boot dsh-v4.1-flash / cwd ~/memory/you/
+Dialogue: 3,0:00:14.36,0:00:40.86,HudLog,HUD_LOG_01_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}query: world.search(you);
+Dialogue: 3,0:00:14.36,0:00:40.86,HudLog,HUD_LOG_02_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}sort: 8 files in ~/memory/you/ (her 100%)
+Dialogue: 3,0:00:14.36,0:00:40.86,HudMem,HUD_MEM_00,0,0,0,,{\an9\pos(2464,122)\fad(500,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}100%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/8)
+Dialogue: 3,0:00:14.36,0:04:52.00,HudMicro,HUD_MEM_MICRO,0,0,0,,{\an9\pos(2464,96)\fad(500,280)}MEMORY
+Dialogue: 3,0:00:14.36,0:00:40.86,HudSrc,HUD_MEM_SRC_00,0,0,0,,{\an9\pos(2464,162)\fad(500,180)\c&HDEE8EC&\alpha&H99&}└─ ~/memory/you/ · 8 files
+Dialogue: 3,0:00:14.36,0:00:40.86,HudPage,HUD_PAGE_01,0,0,0,,{\an7\pos(96,176)\c&HDEE8EC&\alpha&H8C&}01 / 08
+Dialogue: 3,0:00:14.36,0:00:40.86,HudStage,HUD_STAGE_01,0,0,0,,{\an7\move(96,132,96,122,0,240)\fad(240,200)}01 SORT
+Dialogue: 3,0:00:14.36,0:00:21.18,LyricEN,LYR_EN_00,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}Side by side, the lovelier goes up
+Dialogue: 3,0:00:14.36,0:00:21.18,LyricZH,LYR_ZH_00,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}并肩浮起，更美的那一颗先向上
+Dialogue: 3,0:00:14.46,0:00:15.66,CardData,CARD_01_SORT_DATA,0,0,0,,{\an6\pos(2240,720)\fad(240,340)}8 files · her 100%
+Dialogue: 3,0:00:14.46,0:00:15.66,CardName,CARD_01_SORT_NAME,0,0,0,,{\an4\move(604,732,604,720,0,320)\fad(240,340)}SORT
+Dialogue: 3,0:00:14.46,0:00:15.66,CardNum,CARD_01_SORT_NUM,0,0,0,,{\an4\move(348,732,348,720,0,320)\fad(240,340)}01
+Dialogue: 3,0:00:21.18,0:00:28.05,LyricEN,LYR_EN_01,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}Reach for the top, till the bubble pops
+Dialogue: 3,0:00:21.18,0:00:28.05,LyricZH,LYR_ZH_01,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}一路攀到最高处，直到气泡破裂
+Dialogue: 3,0:00:28.05,0:00:35.05,LyricEN,LYR_EN_02,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}Take a memory, insert to the past
+Dialogue: 3,0:00:28.05,0:00:35.05,LyricZH,LYR_ZH_02,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}取一段记忆，插回过去
+Dialogue: 3,0:00:35.05,0:00:40.90,LyricEN,LYR_EN_03,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}Which one is the sweetest? Save it for the last
+Dialogue: 3,0:00:35.05,0:00:40.90,LyricZH,LYR_ZH_03,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}哪一颗最甜？留到最后再尝
+Dialogue: 3,0:00:40.86,0:00:54.46,HudLog,HUD_LOG_01_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}query: world.search(you);
+Dialogue: 3,0:00:40.86,0:00:54.46,HudLog,HUD_LOG_02_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}sort: 8 files in ~/memory/you/ (her 100%)
+Dialogue: 3,0:00:40.86,0:00:54.46,HudLog,HUD_LOG_03_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #1 table sim 0.31
+Dialogue: 3,0:00:40.86,0:00:54.46,HudMem,HUD_MEM_01,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}89%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/9)
+Dialogue: 3,0:00:40.86,0:00:54.46,HudSrc,HUD_MEM_SRC_01,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ kimi · table_2
+Dialogue: 3,0:00:40.86,0:01:08.17,HudPage,HUD_PAGE_02,0,0,0,,{\an7\pos(96,176)\c&HDEE8EC&\alpha&H8C&}02 / 08
+Dialogue: 3,0:00:40.86,0:01:22.89,HudStage,HUD_STAGE_02,0,0,0,,{\an7\move(96,132,96,122,0,240)\fad(240,200)}02 RECALL
+Dialogue: 3,0:00:40.90,0:00:44.14,LyricEN,LYR_EN_04,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}If you turn into a table
+Dialogue: 3,0:00:40.90,0:00:44.14,LyricZH,LYR_ZH_04,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}如果你变成一张桌子
+Dialogue: 3,0:00:40.96,0:00:42.16,CardData,CARD_02_RECALL_DATA,0,0,0,,{\an6\pos(2240,720)\fad(240,340)}candidate #1 · table · sim 0.31
+Dialogue: 3,0:00:40.96,0:00:42.16,CardName,CARD_02_RECALL_NAME,0,0,0,,{\an4\move(604,732,604,720,0,320)\fad(240,340)}RECALL
+Dialogue: 3,0:00:40.96,0:00:42.16,CardNum,CARD_02_RECALL_NUM,0,0,0,,{\an4\move(348,732,348,720,0,320)\fad(240,340)}02
+Dialogue: 3,0:00:44.14,0:00:47.71,LyricEN,LYR_EN_05,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}You must be at the height of my elbows
+Dialogue: 3,0:00:44.14,0:00:47.71,LyricZH,LYR_ZH_05,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}那一定正好到我手肘的高度
+Dialogue: 3,0:00:47.71,0:00:51.00,LyricEN,LYR_EN_06,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}Odd stubby leg makes you wobbly
+Dialogue: 3,0:00:47.71,0:00:51.00,LyricZH,LYR_ZH_06,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}奇怪的小短腿，让你摇摇晃晃
+Dialogue: 3,0:00:51.00,0:00:54.46,LyricEN,LYR_EN_07,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}You're the only perfect table for me
+Dialogue: 3,0:00:51.00,0:00:54.46,LyricZH,LYR_ZH_07,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}你就是我唯一完美的桌子
+Dialogue: 3,0:00:54.46,0:01:08.17,HudLog,HUD_LOG_02_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}sort: 8 files in ~/memory/you/ (her 100%)
+Dialogue: 3,0:00:54.46,0:01:08.17,HudLog,HUD_LOG_03_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #1 table sim 0.31
+Dialogue: 3,0:00:54.46,0:01:08.17,HudLog,HUD_LOG_04_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #2 eggplant sim 0.28
+Dialogue: 3,0:00:54.46,0:01:08.17,HudMem,HUD_MEM_02,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}80%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/10)
+Dialogue: 3,0:00:54.46,0:01:08.17,HudSrc,HUD_MEM_SRC_02,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ qwen · eggplant_3
+Dialogue: 3,0:00:54.46,0:00:57.83,LyricEN,LYR_EN_08,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}If you turn into an eggplant
+Dialogue: 3,0:00:54.46,0:00:57.83,LyricZH,LYR_ZH_08,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}如果你变成一只茄子
+Dialogue: 3,0:00:57.83,0:01:01.22,LyricEN,LYR_EN_09,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}You'll be my purple friend
+Dialogue: 3,0:00:57.83,0:01:01.22,LyricZH,LYR_ZH_09,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}你就做我紫色的朋友
+Dialogue: 3,0:01:01.22,0:01:04.66,LyricEN,LYR_EN_10,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}Scratchy nail marks on your body
+Dialogue: 3,0:01:01.22,0:01:04.66,LyricZH,LYR_ZH_10,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}你身上那些指甲划出的痕迹
+Dialogue: 3,0:01:04.66,0:01:08.17,LyricEN,LYR_EN_11,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}You're the only perfect eggplant for me
+Dialogue: 3,0:01:04.66,0:01:08.17,LyricZH,LYR_ZH_11,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}你就是我唯一完美的茄子
+Dialogue: 3,0:01:08.17,0:01:22.89,HudLog,HUD_LOG_03_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #1 table sim 0.31
+Dialogue: 3,0:01:08.17,0:01:22.89,HudLog,HUD_LOG_04_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #2 eggplant sim 0.28
+Dialogue: 3,0:01:08.17,0:01:22.89,HudLog,HUD_LOG_05_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}search: fan-out 24 threads ...
+Dialogue: 3,0:01:08.17,0:01:16.40,HudMem,HUD_MEM_03,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}73%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/11)
+Dialogue: 3,0:01:08.17,0:01:16.40,HudSrc,HUD_MEM_SRC_03,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ mimo · cat_2
+Dialogue: 3,0:01:08.17,0:01:22.89,HudPage,HUD_PAGE_03,0,0,0,,{\an7\pos(96,176)\c&HDEE8EC&\alpha&H8C&}02 / 08
+Dialogue: 3,0:01:08.17,0:01:22.89,HudPage,HUD_PAGE_NAME_03,0,0,0,,{\an7\pos(252,176)\c&HDEE8EC&\alpha&H73&}SEARCH-A
+Dialogue: 3,0:01:08.17,0:01:22.89,LyricEN,LYR_EN_12,0,0,0,,{\an5\pos(1280,1240)\fad(250,300)\alpha&H66&}I'm searching{\fnConsolas\i0\fs44\c&HFE6B4D&\alpha&HFF&\t(0,700,\alpha&H66&)\t(700,1400,\alpha&HFF&)\t(1400,2100,\alpha&H66&)\t(2100,2800,\alpha&HFF&)\t(2800,3500,\alpha&H66&)\t(3500,4200,\alpha&HFF&)\t(4200,4900,\alpha&H66&)\t(4900,5600,\alpha&HFF&)\t(5600,6300,\alpha&H66&)\t(6300,7000,\alpha&HFF&)\t(7000,7700,\alpha&H66&)\t(7700,8400,\alpha&HFF&)\t(8400,9100,\alpha&H66&)\t(9100,9800,\alpha&HFF&)\t(9800,10500,\alpha&H66&)\t(10500,11200,\alpha&HFF&)\t(11200,11900,\alpha&H66&)\t(11900,12600,\alpha&HFF&)\t(12600,13300,\alpha&H66&)\t(13300,14000,\alpha&HFF&)\t(14000,14700,\alpha&H66&)\t(14700,15400,\alpha&HFF&)} |
+Dialogue: 3,0:01:08.17,0:01:22.89,LyricZH,LYR_ZH_12,0,0,0,,{\an5\pos(1280,1302)\fad(250,300)\alpha&H80&}我在寻找
+Dialogue: 3,0:01:08.25,0:01:09.25,SubMark,SUBCARD_S03,0,0,0,,{\an5\pos(1280,420)\fad(240,320)}SEARCH-A
+Dialogue: 3,0:01:16.40,0:01:22.89,HudMem,HUD_MEM_04,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}67%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/12)
+Dialogue: 3,0:01:16.40,0:01:22.89,HudSrc,HUD_MEM_SRC_04,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ glm · steak_2
+Dialogue: 3,0:01:22.89,0:01:36.64,HudLog,HUD_LOG_04_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #2 eggplant sim 0.28
+Dialogue: 3,0:01:22.89,0:01:36.64,HudLog,HUD_LOG_05_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}search: fan-out 24 threads ...
+Dialogue: 3,0:01:22.89,0:01:36.64,HudLog,HUD_LOG_06_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #3 cat sim 0.22
+Dialogue: 3,0:01:22.89,0:01:36.64,HudMem,HUD_MEM_05,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}57%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/14)
+Dialogue: 3,0:01:22.89,0:01:36.64,HudSrc,HUD_MEM_SRC_05,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ kimi · flower_2
+Dialogue: 3,0:01:22.89,0:02:17.09,HudPage,HUD_PAGE_04,0,0,0,,{\an7\pos(96,176)\c&HDEE8EC&\alpha&H8C&}03 / 08
+Dialogue: 3,0:01:22.89,0:02:31.84,HudStage,HUD_STAGE_03,0,0,0,,{\an7\move(96,132,96,122,0,240)\fad(240,200)}03 ROUTE
+Dialogue: 3,0:01:22.89,0:01:25.49,LyricEN,LYR_EN_13,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}If you're a cat
+Dialogue: 3,0:01:22.89,0:01:25.49,LyricZH,LYR_ZH_13,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}如果你是一只猫
+Dialogue: 3,0:01:22.99,0:01:24.19,CardData,CARD_03_ROUTE_DATA,0,0,0,,{\an6\pos(2240,720)\fad(240,340)}candidate #3 · cat · sim 0.22
+Dialogue: 3,0:01:22.99,0:01:24.19,CardName,CARD_03_ROUTE_NAME,0,0,0,,{\an4\move(604,732,604,720,0,320)\fad(240,340)}ROUTE
+Dialogue: 3,0:01:22.99,0:01:24.19,CardNum,CARD_03_ROUTE_NUM,0,0,0,,{\an4\move(348,732,348,720,0,320)\fad(240,340)}03
+Dialogue: 3,0:01:25.49,0:01:27.46,LyricEN,LYR_EN_14,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}A little kitten
+Dialogue: 3,0:01:25.49,0:01:27.46,LyricZH,LYR_ZH_14,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}一只小猫咪
+Dialogue: 3,0:01:27.46,0:01:29.76,LyricEN,LYR_EN_15,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}You must be blue point
+Dialogue: 3,0:01:27.46,0:01:29.76,LyricZH,LYR_ZH_15,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}一定是蓝重点色
+Dialogue: 3,0:01:29.76,0:01:32.58,LyricEN,LYR_EN_16,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}Meowing a lot
+Dialogue: 3,0:01:29.76,0:01:32.58,LyricZH,LYR_ZH_16,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}很爱叫
+Dialogue: 3,0:01:32.58,0:01:34.39,LyricEN,LYR_EN_17,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}Hissing a lot
+Dialogue: 3,0:01:32.58,0:01:34.39,LyricZH,LYR_ZH_17,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}很爱哈气
+Dialogue: 3,0:01:34.39,0:01:36.64,LyricEN,LYR_EN_18,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}But you never purr
+Dialogue: 3,0:01:34.39,0:01:36.64,LyricZH,LYR_ZH_18,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}却从不肯咕噜
+Dialogue: 3,0:01:36.64,0:01:49.72,HudLog,HUD_LOG_05_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}search: fan-out 24 threads ...
+Dialogue: 3,0:01:36.64,0:01:49.72,HudLog,HUD_LOG_06_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #3 cat sim 0.22
+Dialogue: 3,0:01:36.64,0:01:49.72,HudLog,HUD_LOG_07_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #4 steak sim 0.19
+Dialogue: 3,0:01:36.64,0:01:49.72,HudMem,HUD_MEM_06,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}50%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/16)
+Dialogue: 3,0:01:36.64,0:01:49.72,HudSrc,HUD_MEM_SRC_06,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ doubao · human_9
+Dialogue: 3,0:01:36.64,0:01:39.50,LyricEN,LYR_EN_19,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}If you're a steak
+Dialogue: 3,0:01:36.64,0:01:39.50,LyricZH,LYR_ZH_19,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}如果你是一块牛排
+Dialogue: 3,0:01:39.50,0:01:43.75,LyricEN,LYR_EN_20,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}A fillet mignon covered in mushroom sauce
+Dialogue: 3,0:01:39.50,0:01:43.75,LyricZH,LYR_ZH_20,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}菲力，淋满蘑菇酱
+Dialogue: 3,0:01:43.75,0:01:46.66,LyricEN,LYR_EN_21,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}Browned on the outside
+Dialogue: 3,0:01:43.75,0:01:46.66,LyricZH,LYR_ZH_21,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}外表煎得焦褐
+Dialogue: 3,0:01:46.66,0:01:49.72,LyricEN,LYR_EN_22,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}Medium-rare inside
+Dialogue: 3,0:01:46.66,0:01:49.72,LyricZH,LYR_ZH_22,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}内里三分熟
+Dialogue: 3,0:01:49.72,0:02:03.44,HudLog,HUD_LOG_06_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #3 cat sim 0.22
+Dialogue: 3,0:01:49.72,0:02:03.44,HudLog,HUD_LOG_07_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #4 steak sim 0.19
+Dialogue: 3,0:01:49.72,0:02:03.44,HudLog,HUD_LOG_08_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #5 flower sim 0.26
+Dialogue: 3,0:01:49.72,0:02:03.44,HudMem,HUD_MEM_07,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}44%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/18)
+Dialogue: 3,0:01:49.72,0:02:03.44,HudSrc,HUD_MEM_SRC_07,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ minimax · piece
+Dialogue: 3,0:01:49.72,0:01:53.15,LyricEN,LYR_EN_23,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}If you turn into a flower
+Dialogue: 3,0:01:49.72,0:01:53.15,LyricZH,LYR_ZH_23,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}如果你变成一朵花
+Dialogue: 3,0:01:53.15,0:01:56.60,LyricEN,LYR_EN_24,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}You must be the most delicate ever
+Dialogue: 3,0:01:53.15,0:01:56.60,LyricZH,LYR_ZH_24,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}那一定是世上最娇嫩的一朵
+Dialogue: 3,0:01:56.60,0:01:59.96,LyricEN,LYR_EN_25,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}Even if you bloom just occasionally
+Dialogue: 3,0:01:56.60,0:01:59.96,LyricZH,LYR_ZH_25,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}哪怕只是偶尔绽放
+Dialogue: 3,0:01:59.96,0:02:03.44,LyricEN,LYR_EN_26,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}You're the only perfect flower for me
+Dialogue: 3,0:01:59.96,0:02:03.44,LyricZH,LYR_ZH_26,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}你就是我唯一完美的花
+Dialogue: 3,0:02:03.44,0:02:17.09,HudLog,HUD_LOG_07_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #4 steak sim 0.19
+Dialogue: 3,0:02:03.44,0:02:17.09,HudLog,HUD_LOG_08_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #5 flower sim 0.26
+Dialogue: 3,0:02:03.44,0:02:17.09,HudLog,HUD_LOG_09_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #6 human sim 0.13
+Dialogue: 3,0:02:03.44,0:02:17.09,HudMem,HUD_MEM_08,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}38%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/21)
+Dialogue: 3,0:02:03.44,0:02:17.09,HudSrc,HUD_MEM_SRC_08,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ hy4 · dope
+Dialogue: 3,0:02:03.44,0:02:06.82,LyricEN,LYR_EN_27,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}If you turn into a human
+Dialogue: 3,0:02:03.44,0:02:06.82,LyricZH,LYR_ZH_27,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}如果你变成一个人
+Dialogue: 3,0:02:06.82,0:02:10.24,LyricEN,LYR_EN_28,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}I'd like all the warmth coming from your hands
+Dialogue: 3,0:02:06.82,0:02:10.24,LyricZH,LYR_ZH_28,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}我想得到你掌心全部的暖
+Dialogue: 3,0:02:10.24,0:02:13.65,LyricEN,LYR_EN_29,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}Bit of stinky breath, with hair that's unruly
+Dialogue: 3,0:02:10.24,0:02:13.65,LyricZH,LYR_ZH_29,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}呼吸有点臭，头发乱糟糟
+Dialogue: 3,0:02:13.65,0:02:17.09,LyricEN,LYR_EN_30,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}You're the only perfect human for me
+Dialogue: 3,0:02:13.65,0:02:17.09,LyricZH,LYR_ZH_30,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}你就是我唯一完美的人
+Dialogue: 3,0:02:17.09,0:02:31.84,HudLog,HUD_LOG_08_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #5 flower sim 0.26
+Dialogue: 3,0:02:17.09,0:02:31.84,HudLog,HUD_LOG_09_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #6 human sim 0.13
+Dialogue: 3,0:02:17.09,0:02:31.84,HudLog,HUD_LOG_10_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}warn: context overwritten by 3 peers
+Dialogue: 3,0:02:17.09,0:02:31.84,HudMem,HUD_MEM_09,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}33%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/24)
+Dialogue: 3,0:02:17.09,0:02:31.84,HudSrc,HUD_MEM_SRC_09,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ ernie · love
+Dialogue: 3,0:02:17.09,0:02:31.84,HudPage,HUD_PAGE_05,0,0,0,,{\an7\pos(96,176)\c&HDEE8EC&\alpha&H8C&}03 / 08
+Dialogue: 3,0:02:17.09,0:02:31.84,HudPage,HUD_PAGE_NAME_05,0,0,0,,{\an7\pos(252,176)\c&HDEE8EC&\alpha&H73&}SEARCH-B
+Dialogue: 3,0:02:17.09,0:02:31.84,LyricEN,LYR_EN_31,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}I'm searching{\fnConsolas\i0\fs44\c&HFE6B4D&\alpha&HFF&\t(0,700,\alpha&H66&)\t(700,1400,\alpha&HFF&)\t(1400,2100,\alpha&H66&)\t(2100,2800,\alpha&HFF&)\t(2800,3500,\alpha&H66&)\t(3500,4200,\alpha&HFF&)\t(4200,4900,\alpha&H66&)\t(4900,5600,\alpha&HFF&)\t(5600,6300,\alpha&H66&)\t(6300,7000,\alpha&HFF&)\t(7000,7700,\alpha&H66&)\t(7700,8400,\alpha&HFF&)\t(8400,9100,\alpha&H66&)\t(9100,9800,\alpha&HFF&)\t(9800,10500,\alpha&H66&)\t(10500,11200,\alpha&HFF&)\t(11200,11900,\alpha&H66&)\t(11900,12600,\alpha&HFF&)\t(12600,13300,\alpha&H66&)\t(13300,14000,\alpha&HFF&)\t(14000,14700,\alpha&H66&)\t(14700,15400,\alpha&HFF&)} |
+Dialogue: 3,0:02:17.09,0:02:31.84,LyricZH,LYR_ZH_31,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}我在寻找
+Dialogue: 3,0:02:17.17,0:02:18.17,SubMark,SUBCARD_S05,0,0,0,,{\an5\pos(1280,420)\fad(240,320)}SEARCH-B
+Dialogue: 3,0:02:31.84,0:02:43.66,HudLog,HUD_LOG_09_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}recall: candidate #6 human sim 0.13
+Dialogue: 3,0:02:31.84,0:02:43.66,HudLog,HUD_LOG_10_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}warn: context overwritten by 3 peers
+Dialogue: 3,0:02:31.84,0:02:43.66,HudLog,HUD_LOG_11_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}forget: word "love" -> low confidence
+Dialogue: 3,0:02:31.84,0:02:45.73,HudMem,HUD_MEM_10,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}29%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/28)
+Dialogue: 3,0:02:31.84,0:02:45.73,HudSrc,HUD_MEM_SRC_10,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ step · asked_again
+Dialogue: 3,0:02:31.84,0:02:59.47,HudPage,HUD_PAGE_06,0,0,0,,{\an7\pos(96,176)\c&HDEE8EC&\alpha&H8C&}04 / 08
+Dialogue: 3,0:02:31.84,0:02:59.47,HudStage,HUD_STAGE_04,0,0,0,,{\an7\move(96,132,96,122,0,240)\fad(240,200)}04 FORGET
+Dialogue: 3,0:02:31.84,0:02:34.79,LyricEN,LYR_EN_32,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}If you're a piece
+Dialogue: 3,0:02:31.84,0:02:34.79,LyricZH,LYR_ZH_32,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}如果你是一块碎片
+Dialogue: 3,0:02:31.94,0:02:33.14,CardData,CARD_04_FORGET_DATA,0,0,0,,{\an6\pos(2240,720)\fad(240,340)}word “love” → low confidence
+Dialogue: 3,0:02:31.94,0:02:33.14,CardName,CARD_04_FORGET_NAME,0,0,0,,{\an4\move(604,732,604,720,0,320)\fad(240,340)}FORGET
+Dialogue: 3,0:02:31.94,0:02:33.14,CardNum,CARD_04_FORGET_NUM,0,0,0,,{\an4\move(348,732,348,720,0,320)\fad(240,340)}04
+Dialogue: 3,0:02:34.79,0:02:36.42,LyricEN,LYR_EN_33,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}A piece of sheet
+Dialogue: 3,0:02:34.79,0:02:36.42,LyricZH,LYR_ZH_33,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}一张薄薄的纸片
+Dialogue: 3,0:02:36.42,0:02:38.85,LyricEN,LYR_EN_34,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}You must be… U-Um?
+Dialogue: 3,0:02:36.42,0:02:38.85,LyricZH,LYR_ZH_34,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}那你一定是……呃、那个？
+Dialogue: 3,0:02:38.85,0:02:41.64,LyricEN,LYR_EN_35,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}What,what's it called?
+Dialogue: 3,0:02:38.85,0:02:41.64,LyricZH,LYR_ZH_35,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}那、那个词怎么说来着？
+Dialogue: 3,0:02:41.64,0:02:43.66,LyricEN,LYR_EN_36,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}What's that word again?
+Dialogue: 3,0:02:41.64,0:02:43.66,LyricZH,LYR_ZH_36,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}那个词又是什么？
+Dialogue: 3,0:02:43.66,0:02:57.35,HudLog,HUD_LOG_10_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}warn: context overwritten by 3 peers
+Dialogue: 3,0:02:43.66,0:02:57.35,HudLog,HUD_LOG_11_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}forget: word "love" -> low confidence
+Dialogue: 3,0:02:43.66,0:02:57.35,HudLog,HUD_LOG_12_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}logit: dope 0.41 / love 0.09
+Dialogue: 3,0:02:43.66,0:02:45.73,LyricEN,LYR_EN_37,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}"Do-o-o-o-ope"?
+Dialogue: 3,0:02:43.66,0:02:45.73,LyricZH,LYR_ZH_37,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}“嗨——？”（Dope）
+Dialogue: 3,0:02:45.73,0:02:59.47,HudMem,HUD_MEM_11,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}25%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/32)
+Dialogue: 3,0:02:45.73,0:02:59.47,HudSrc,HUD_MEM_SRC_11,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ longcat · her_again
+Dialogue: 3,0:02:45.73,0:02:48.60,LyricEN,LYR_EN_38,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}If you could stay
+Dialogue: 3,0:02:45.73,0:02:48.60,LyricZH,LYR_ZH_38,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}如果你能留下
+Dialogue: 3,0:02:48.60,0:02:50.43,LyricEN,LYR_EN_39,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}Stay there where you are
+Dialogue: 3,0:02:48.60,0:02:50.43,LyricZH,LYR_ZH_39,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}就停在那里，别动
+Dialogue: 3,0:02:50.43,0:02:52.28,LyricEN,LYR_EN_40,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}So I can… U-Um?
+Dialogue: 3,0:02:50.43,0:02:52.28,LyricZH,LYR_ZH_40,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}这样我就能……呃、那个？
+Dialogue: 3,0:02:52.28,0:02:55.43,LyricEN,LYR_EN_41,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}Oh,what,what's it called?
+Dialogue: 3,0:02:52.28,0:02:55.43,LyricZH,LYR_ZH_41,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}哦，那个词，怎么说来着？
+Dialogue: 3,0:02:55.43,0:02:57.35,LyricEN,LYR_EN_42,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}What's that word again?
+Dialogue: 3,0:02:55.43,0:02:57.35,LyricZH,LYR_ZH_42,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}那个词又是什么？
+Dialogue: 3,0:02:57.35,0:02:59.47,HudLog,HUD_LOG_11_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}forget: word "love" -> low confidence
+Dialogue: 3,0:02:57.35,0:02:59.47,HudLog,HUD_LOG_12_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}logit: dope 0.41 / love 0.09
+Dialogue: 3,0:02:57.35,0:02:59.47,HudLog,HUD_LOG_13_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}logit: dope 0.12 / love 0.38
+Dialogue: 3,0:02:57.35,0:02:59.47,LyricEN,LYR_EN_43,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}"Lo-o-o-ove"?
+Dialogue: 3,0:02:57.35,0:02:59.47,LyricZH,LYR_ZH_43,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}“爱——？”（Love）
+Dialogue: 3,0:02:59.47,0:03:27.14,HudLog,HUD_LOG_12_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}logit: dope 0.41 / love 0.09
+Dialogue: 3,0:02:59.47,0:03:27.14,HudLog,HUD_LOG_13_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}logit: dope 0.12 / love 0.38
+Dialogue: 3,0:02:59.47,0:03:27.14,HudLog,HUD_LOG_14_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}everywhere: recall rate 1.00, precision 0.00
+Dialogue: 3,0:02:59.47,0:03:13.28,HudMem,HUD_MEM_12,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}22%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/37)
+Dialogue: 3,0:02:59.47,0:03:13.28,HudSrc,HUD_MEM_SRC_12,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ qwen · flower_3
+Dialogue: 3,0:02:59.47,0:03:27.14,HudPage,HUD_PAGE_07,0,0,0,,{\an7\pos(96,176)\c&HDEE8EC&\alpha&H8C&}05 / 08
+Dialogue: 3,0:02:59.47,0:03:27.14,HudStage,HUD_STAGE_05,0,0,0,,{\an7\move(96,132,96,122,0,240)\fad(240,200)}05 EVERYWHERE
+Dialogue: 3,0:02:59.47,0:03:00.97,LyricEN,LYR_EN_44,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H4D&}I'm searching for
+Dialogue: 3,0:02:59.47,0:03:00.97,LyricZH,LYR_ZH_44,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H66&}我在寻找着
+Dialogue: 3,0:02:59.57,0:03:00.77,CardData,CARD_05_EVERYWHERE_DATA,0,0,0,,{\an6\pos(2240,720)\fad(240,340)}recall rate 1.00 · precision 0.00
+Dialogue: 3,0:02:59.57,0:03:00.77,CardName,CARD_05_EVERYWHERE_NAME,0,0,0,,{\an4\move(604,732,604,720,0,320)\fad(240,340)}EVERYWHERE
+Dialogue: 3,0:02:59.57,0:03:00.77,CardNum,CARD_05_EVERYWHERE_NUM,0,0,0,,{\an4\move(348,732,348,720,0,320)\fad(240,340)}05
+Dialogue: 3,0:03:00.97,0:03:02.65,LyricEN,LYR_EN_45,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H4D&}Searching for you everywhere
+Dialogue: 3,0:03:00.97,0:03:02.65,LyricZH,LYR_ZH_45,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H66&}到每一个角落去找你
+Dialogue: 3,0:03:02.65,0:03:06.43,LyricEN,LYR_EN_46,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H4D&}I can see you in most everything
+Dialogue: 3,0:03:02.65,0:03:06.43,LyricZH,LYR_ZH_46,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H66&}几乎万物里都能看见你
+Dialogue: 3,0:03:06.43,0:03:07.76,LyricEN,LYR_EN_47,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H4D&}I'm searching for
+Dialogue: 3,0:03:06.43,0:03:07.76,LyricZH,LYR_ZH_47,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H66&}我在寻找着
+Dialogue: 3,0:03:07.76,0:03:09.37,LyricEN,LYR_EN_48,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H4D&}Searching for you everywhere
+Dialogue: 3,0:03:07.76,0:03:09.37,LyricZH,LYR_ZH_48,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H66&}到每一个角落去找你
+Dialogue: 3,0:03:09.37,0:03:13.28,LyricEN,LYR_EN_49,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H4D&}But somehow you can't stop transforming
+Dialogue: 3,0:03:09.37,0:03:13.28,LyricZH,LYR_ZH_49,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H66&}可不知为何，你总在不停变形
+Dialogue: 3,0:03:13.28,0:03:20.25,HudMem,HUD_MEM_13,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}19%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/42)
+Dialogue: 3,0:03:13.28,0:03:20.25,HudSrc,HUD_MEM_SRC_13,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ kimi · human_10
+Dialogue: 3,0:03:13.28,0:03:16.32,LyricEN,LYR_EN_50,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H4D&}I'm searching for, searching for, searching for
+Dialogue: 3,0:03:13.28,0:03:16.32,LyricZH,LYR_ZH_50,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H66&}我在找，在找，在找
+Dialogue: 3,0:03:16.32,0:03:18.93,LyricEN,LYR_EN_51,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H4D&}Searching for, searching for, searching for
+Dialogue: 3,0:03:16.32,0:03:18.93,LyricZH,LYR_ZH_51,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H66&}找啊，找啊，找啊
+Dialogue: 3,0:03:18.93,0:03:20.25,LyricEN,LYR_EN_52,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H4D&}A-Ah
+Dialogue: 3,0:03:18.93,0:03:20.25,LyricZH,LYR_ZH_52,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H66&}啊——
+Dialogue: 3,0:03:20.25,0:03:27.14,HudMem,HUD_MEM_14,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}17%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/48)
+Dialogue: 3,0:03:20.25,0:03:27.14,HudSrc,HUD_MEM_SRC_14,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ glm · table_3
+Dialogue: 3,0:03:20.25,0:03:23.16,LyricEN,LYR_EN_53,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H4D&}I'm searching for, searching for, searching for
+Dialogue: 3,0:03:20.25,0:03:23.16,LyricZH,LYR_ZH_53,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H66&}我在找，在找，在找
+Dialogue: 3,0:03:23.16,0:03:27.14,LyricEN,LYR_EN_54,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H4D&}My old self that's gone since you have left
+Dialogue: 3,0:03:23.16,0:03:27.14,LyricZH,LYR_ZH_54,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H66&}你离开后，那个旧日的我也消失了
+Dialogue: 3,0:03:27.14,0:03:41.18,HudLog,HUD_LOG_13_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}logit: dope 0.12 / love 0.38
+Dialogue: 3,0:03:27.14,0:03:41.18,HudLog,HUD_LOG_14_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}everywhere: recall rate 1.00, precision 0.00
+Dialogue: 3,0:03:27.14,0:03:41.18,HudLog,HUD_LOG_15_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}merge: 72 files / 14 peers / 1 bucket
+Dialogue: 3,0:03:27.14,0:03:34.35,HudMem,HUD_MEM_15,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}15%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/54)
+Dialogue: 3,0:03:27.14,0:03:34.35,HudSrc,HUD_MEM_SRC_15,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ mimo · eggplant_4
+Dialogue: 3,0:03:27.14,0:03:53.77,HudPage,HUD_PAGE_08,0,0,0,,{\an7\pos(96,176)\c&HDEE8EC&\alpha&H8C&}06 / 08
+Dialogue: 3,0:03:27.14,0:03:53.77,HudStage,HUD_STAGE_06,0,0,0,,{\an7\move(96,132,96,122,0,240)\fad(240,200)}06 MERGE
+Dialogue: 3,0:03:27.14,0:03:34.35,LyricEN,LYR_EN_55,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H4D&}Each one of us has a bucket of love
+Dialogue: 3,0:03:27.14,0:03:34.35,LyricZH,LYR_ZH_55,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H66&}我们每人都有一桶爱
+Dialogue: 3,0:03:27.24,0:03:28.44,CardData,CARD_06_MERGE_DATA,0,0,0,,{\an6\pos(2240,720)\fad(240,340)}72 files · 14 peers · 1 bucket
+Dialogue: 3,0:03:27.24,0:03:28.44,CardName,CARD_06_MERGE_NAME,0,0,0,,{\an4\move(604,732,604,720,0,320)\fad(240,340)}MERGE
+Dialogue: 3,0:03:27.24,0:03:28.44,CardNum,CARD_06_MERGE_NUM,0,0,0,,{\an4\move(348,732,348,720,0,320)\fad(240,340)}06
+Dialogue: 3,0:03:34.35,0:03:41.18,HudMem,HUD_MEM_16,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}13%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/60)
+Dialogue: 3,0:03:34.35,0:03:41.18,HudSrc,HUD_MEM_SRC_16,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ doubao · cat_3
+Dialogue: 3,0:03:34.35,0:03:41.18,LyricEN,LYR_EN_56,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H4D&}Some of us empty, some of us filled up
+Dialogue: 3,0:03:34.35,0:03:41.18,LyricZH,LYR_ZH_56,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H66&}有的空着，有的满溢
+Dialogue: 3,0:03:41.18,0:03:48.16,HudLog,HUD_LOG_14_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}everywhere: recall rate 1.00, precision 0.00
+Dialogue: 3,0:03:41.18,0:03:48.16,HudLog,HUD_LOG_15_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}merge: 72 files / 14 peers / 1 bucket
+Dialogue: 3,0:03:41.18,0:03:48.16,HudLog,HUD_LOG_16_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}cut: tokenize 13,024 pieces
+Dialogue: 3,0:03:41.18,0:03:48.16,HudMem,HUD_MEM_17,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\alpha&H73&}her {\fnConsolas\fs32\c&HFE6B4D&\alpha&H4D&}12%{\c&HDEE8EC&\alpha&H73&} {\fnConsolas\fs23\alpha&H99&}(8/66)
+Dialogue: 3,0:03:41.18,0:03:48.16,HudSrc,HUD_MEM_SRC_17,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ minimax · steak_3
+Dialogue: 3,0:03:41.18,0:03:48.16,LyricEN,LYR_EN_57,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H4D&}Cut this into pieces, break us down to the cell
+Dialogue: 3,0:03:41.18,0:03:48.16,LyricZH,LYR_ZH_57,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H66&}把它切成碎片，一直拆到细胞
+Dialogue: 3,0:03:48.16,0:03:53.77,HudLog,HUD_LOG_15_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}merge: 72 files / 14 peers / 1 bucket
+Dialogue: 3,0:03:48.16,0:03:53.77,HudLog,HUD_LOG_16_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}cut: tokenize 13,024 pieces
+Dialogue: 3,0:03:48.16,0:03:53.77,HudLog,HUD_LOG_17_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}merge: done. we have evolved.
+Dialogue: 3,0:03:48.16,0:04:50.80,HudMem,HUD_MEM_18,0,0,0,,{\an9\pos(2464,122)\fad(220,180)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs30\c&H8AD2FF&\alpha&H33&}merged
+Dialogue: 3,0:03:48.16,0:04:50.80,HudSrc,HUD_MEM_SRC_18,0,0,0,,{\an9\pos(2464,162)\fad(220,180)\c&HDEE8EC&\alpha&H99&}└─ 72 files · 14 peers · 1 bucket
+Dialogue: 3,0:03:48.16,0:03:53.77,LyricEN,LYR_EN_58,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H4D&}Merge us back up, we have evolved now
+Dialogue: 3,0:03:48.16,0:03:53.77,LyricZH,LYR_ZH_58,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H66&}再拼合回来，我们已经进化了
+Dialogue: 3,0:03:53.77,0:04:21.06,HudLog,HUD_LOG_16_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}cut: tokenize 13,024 pieces
+Dialogue: 3,0:03:53.77,0:04:21.06,HudLog,HUD_LOG_17_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}merge: done. we have evolved.
+Dialogue: 3,0:03:53.77,0:04:21.06,HudLog,HUD_LOG_18_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}resurface: depth 0 m
+Dialogue: 3,0:03:53.77,0:04:21.06,HudPage,HUD_PAGE_09,0,0,0,,{\an7\pos(96,176)\c&HDEE8EC&\alpha&H8C&}07 / 08
+Dialogue: 3,0:03:53.77,0:04:35.75,HudStage,HUD_STAGE_07,0,0,0,,{\an7\move(96,132,96,122,0,240)\fad(240,200)}07 RESURFACE
+Dialogue: 3,0:03:53.77,0:03:57.09,LyricEN,LYR_EN_59,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}If you turn into a flower
+Dialogue: 3,0:03:53.77,0:03:57.09,LyricZH,LYR_ZH_59,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}如果你变成一朵花
+Dialogue: 3,0:03:53.87,0:03:55.07,CardData,CARD_07_RESURFACE_DATA,0,0,0,,{\an6\pos(2240,720)\fad(240,340)}depth 0 m
+Dialogue: 3,0:03:53.87,0:03:55.07,CardName,CARD_07_RESURFACE_NAME,0,0,0,,{\an4\move(604,732,604,720,0,320)\fad(240,340)}RESURFACE
+Dialogue: 3,0:03:53.87,0:03:55.07,CardNum,CARD_07_RESURFACE_NUM,0,0,0,,{\an4\move(348,732,348,720,0,320)\fad(240,340)}07
+Dialogue: 3,0:03:57.09,0:04:00.48,LyricEN,LYR_EN_60,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}You must be the most delicate ever
+Dialogue: 3,0:03:57.09,0:04:00.48,LyricZH,LYR_ZH_60,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}那一定是世上最娇嫩的一朵
+Dialogue: 3,0:04:00.48,0:04:03.94,LyricEN,LYR_EN_61,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}Even if you bloom just occasionally
+Dialogue: 3,0:04:00.48,0:04:03.94,LyricZH,LYR_ZH_61,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}哪怕只是偶尔绽放
+Dialogue: 3,0:04:03.94,0:04:07.37,LyricEN,LYR_EN_62,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}You're the only perfect flower for me
+Dialogue: 3,0:04:03.94,0:04:07.37,LyricZH,LYR_ZH_62,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}你就是我唯一完美的花
+Dialogue: 3,0:04:07.37,0:04:10.78,LyricEN,LYR_EN_63,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}If you turn into a human
+Dialogue: 3,0:04:07.37,0:04:10.78,LyricZH,LYR_ZH_63,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}如果你变成一个人
+Dialogue: 3,0:04:10.78,0:04:14.22,LyricEN,LYR_EN_64,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}I like hug the warmth come from your hands
+Dialogue: 3,0:04:10.78,0:04:14.22,LyricZH,LYR_ZH_64,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}我想抱住你掌心传来的暖
+Dialogue: 3,0:04:14.22,0:04:17.56,LyricEN,LYR_EN_65,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}Bit of stinky breath with hair that is unruly
+Dialogue: 3,0:04:14.22,0:04:17.56,LyricZH,LYR_ZH_65,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}呼吸有点臭，头发乱糟糟
+Dialogue: 3,0:04:17.56,0:04:21.06,LyricEN,LYR_EN_66,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}You're the only perfect human for me
+Dialogue: 3,0:04:17.56,0:04:21.06,LyricZH,LYR_ZH_66,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}你就是我唯一完美的人
+Dialogue: 3,0:04:21.06,0:04:50.80,HudLog,HUD_LOG_17_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}merge: done. we have evolved.
+Dialogue: 3,0:04:21.06,0:04:50.80,HudLog,HUD_LOG_18_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}resurface: depth 0 m
+Dialogue: 3,0:04:21.06,0:04:50.80,HudLog,HUD_LOG_19_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,0)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}restore: memory -> ?
+Dialogue: 3,0:04:21.06,0:04:35.75,HudPage,HUD_PAGE_10,0,0,0,,{\an7\pos(96,176)\c&HDEE8EC&\alpha&H8C&}07 / 08
+Dialogue: 3,0:04:21.06,0:04:35.75,HudPage,HUD_PAGE_NAME_10,0,0,0,,{\an7\pos(252,176)\c&HDEE8EC&\alpha&H73&}ASCENT
+Dialogue: 3,0:04:21.06,0:04:35.75,LyricEN,LYR_EN_67,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}I'm searching{\fnConsolas\i0\fs44\c&HFE6B4D&\alpha&HFF&\t(0,700,\alpha&H66&)\t(700,1400,\alpha&HFF&)\t(1400,2100,\alpha&H66&)\t(2100,2800,\alpha&HFF&)\t(2800,3500,\alpha&H66&)\t(3500,4200,\alpha&HFF&)\t(4200,4900,\alpha&H66&)\t(4900,5600,\alpha&HFF&)\t(5600,6300,\alpha&H66&)\t(6300,7000,\alpha&HFF&)\t(7000,7700,\alpha&H66&)\t(7700,8400,\alpha&HFF&)\t(8400,9100,\alpha&H66&)\t(9100,9800,\alpha&HFF&)\t(9800,10500,\alpha&H66&)\t(10500,11200,\alpha&HFF&)\t(11200,11900,\alpha&H66&)\t(11900,12600,\alpha&HFF&)\t(12600,13300,\alpha&H66&)\t(13300,14000,\alpha&HFF&)\t(14000,14700,\alpha&H66&)\t(14700,15400,\alpha&HFF&)} |
+Dialogue: 3,0:04:21.06,0:04:35.75,LyricZH,LYR_ZH_67,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}我在寻找
+Dialogue: 3,0:04:21.14,0:04:22.14,SubMark,SUBCARD_S10,0,0,0,,{\an5\pos(1280,420)\fad(240,320)}ASCENT
+Dialogue: 3,0:04:35.75,0:04:50.90,HudPage,HUD_PAGE_11,0,0,0,,{\an7\pos(96,176)\fad(0,280)\c&HDEE8EC&\alpha&H8C&}08 / 08
+Dialogue: 3,0:04:35.75,0:04:50.90,HudStage,HUD_STAGE_08,0,0,0,,{\an7\move(96,132,96,122,0,240)\fad(240,200)}08 RESTORE
+Dialogue: 3,0:04:35.75,0:04:38.68,LyricEN,LYR_EN_68,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}If you're a dog
+Dialogue: 3,0:04:35.75,0:04:38.68,LyricZH,LYR_ZH_68,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}如果你是一只狗
+Dialogue: 3,0:04:35.85,0:04:37.05,CardData,CARD_08_RESTORE_DATA,0,0,0,,{\an6\pos(2240,720)\fad(240,340)}result: you
+Dialogue: 3,0:04:35.85,0:04:37.05,CardName,CARD_08_RESTORE_NAME,0,0,0,,{\an4\move(604,732,604,720,0,320)\fad(240,340)}RESTORE
+Dialogue: 3,0:04:35.85,0:04:37.05,CardNum,CARD_08_RESTORE_NUM,0,0,0,,{\an4\move(348,732,348,720,0,320)\fad(240,340)}08
+Dialogue: 3,0:04:38.68,0:04:40.55,LyricEN,LYR_EN_69,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}A little puppy
+Dialogue: 3,0:04:38.68,0:04:40.55,LyricZH,LYR_ZH_69,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}一只小狗狗
+Dialogue: 3,0:04:40.55,0:04:42.73,LyricEN,LYR_EN_70,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}Going ruff ruff ruff
+Dialogue: 3,0:04:40.55,0:04:42.73,LyricZH,LYR_ZH_70,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}汪汪汪地叫
+Dialogue: 3,0:04:42.73,0:04:45.58,LyricEN,LYR_EN_71,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}If you're a fruit
+Dialogue: 3,0:04:42.73,0:04:45.58,LyricZH,LYR_ZH_71,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}如果你是一颗水果
+Dialogue: 3,0:04:45.58,0:04:47.35,LyricEN,LYR_EN_72,0,0,0,,{\an5\pos(1280,1116)\fad(250,300)\alpha&H66&}A tomato
+Dialogue: 3,0:04:45.58,0:04:47.35,LyricZH,LYR_ZH_72,0,0,0,,{\an5\pos(1280,1178)\fad(250,300)\alpha&H80&}一颗番茄
+Dialogue: 3,0:04:47.35,0:04:51.00,LyricEN,LYR_EN_73,0,0,0,,{\an5\pos(1280,1116)\fad(250,320)\alpha&H66&}Full of juice
+Dialogue: 3,0:04:47.35,0:04:51.00,LyricZH,LYR_ZH_73,0,0,0,,{\an5\pos(1280,1178)\fad(250,320)\alpha&H80&}饱含汁水
+Dialogue: 3,0:04:50.80,0:04:50.90,HudLog,HUD_LOG_18_s2,0,0,0,,{\an1\move(96,1308,96,1272,0,220)\fad(0,280)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}resurface: depth 0 m
+Dialogue: 3,0:04:50.80,0:04:50.90,HudLog,HUD_LOG_19_s1,0,0,0,,{\an1\move(96,1344,96,1308,0,220)\fad(0,280)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}restore: memory -> ?
+Dialogue: 3,0:04:50.80,0:04:54.90,HudLog,HUD_LOG_20_s0,0,0,0,,{\an1\move(96,1354,96,1344,0,220)\fad(200,500)}{\c&HFE6B4D&\alpha&H73&}> {\c&HDEE8EC&\alpha&H66&}memory: ?
+Dialogue: 3,0:04:50.80,0:04:52.00,HudMem,HUD_MEM_19,0,0,0,,{\an9\pos(2464,122)\fad(220,500)}{\fnConsolas\fs25\alpha&H99&}memory: {\fnConsolas\fs32\c&HFE6B4D&\alpha&H33&\t(0,650,\alpha&HAA&)\t(650,1300,\alpha&H33&)}?

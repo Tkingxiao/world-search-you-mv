@@ -5,6 +5,8 @@
 
 当前渲染档案：**1920×1080 / 60fps / 10 spp / 17,721 帧 / 4:55.35**
 
+> 🎬 **这条作品的起点是一句给 AI 的创作提示词**——原文逐字收录在 [`mv/docs/初始提示词.md`](mv/docs/初始提示词.md)，并附"提示词 → 仓库产物"的对照表。
+
 历史 v2 成片（1440p）：**2560×1440 / 60fps / 17,721 帧 / 4:55.35**
 
 ---
@@ -17,6 +19,7 @@
 | `mv/out/final/master_video_no_text.mp4` / `master_audio.wav` | 无字母版 + 音频轨（拼接中间产物） |
 | `mv/out/final/world.search(you).srt` | 中英双语字幕（外挂） |
 | `mv/out/shots/s01..s15.mp4` | 逐镜 1080p60 母版 |
+| `mv/docs/初始提示词.md` | **本项目最初的那条创作提示词（导演意图）原文存档** + 逐条落地对照 |
 | `mv/docs/创作手记.md` | 创作阐述（主题、视觉、技术、署名） |
 | `mv/docs/TREATMENT.md` | 前期分镜/视觉方案 |
 | `mv/docs/UI_SPEC.md` / `CHAR_INTERFACE.md` / `SPECIMEN_INTERFACE.md` / `SPECIMEN_NOTES.md` / `SHOT_CONTRACT.md` | 各管线的接口文档 |
